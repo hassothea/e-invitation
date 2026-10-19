@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -100,6 +102,11 @@
   .rise {
     animation: rise 1s cubic-bezier(0.22, 1, 0.36, 1) both;
     animation-delay: var(--d, 0s);
+  }
+  .font-wedding {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    line-height: 1.5;
   }
   /* Gold gradient text. .gold-text is for dark backgrounds (the cover card);
      .gold-text-ink is for the light page (headings). */

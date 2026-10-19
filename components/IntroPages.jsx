@@ -32,10 +32,7 @@ export function CoverPage({ guestName, onOpen }) {
           />
         )}
 
-          <span className="font-display" style={{ fontSize: "clamp(1.4rem, min(7vw, 5.6svh), 3rem)" }}>
-            <span className="gold-text">{hero.monogram}</span>
-          </span>
-        <p className="relative font-display" style={{ fontSize: "clamp(1.2rem, min(5vw, 4svh), 2.8rem)", marginTop: "2.5svh" }}>
+        <p className="relative font-wedding" style={{ fontSize: "clamp(1.8rem, min(7vw, 5.5svh), 5rem)", marginTop: "2.5svh" }}>
           <span className="gold-text">{`${a} & ${b}`}</span>
         </p>
       </div>

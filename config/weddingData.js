@@ -238,7 +238,7 @@ export const weddingData = {
       { src: "/images/gallery-07.JPG", alt: "Photo 7 of the couple" },
       { src: "/images/gallery-08.JPG", alt: "Photo 8 of the couple" },
       { src: "/images/gallery-09.JPG", alt: "Photo 9 of the couple" },
-      { src: "/images/gallery-10.JPG", alt: "Photo 10 of the couple" },
+      { src: "/images/gallery-010.JPG", alt: "Photo 10 of the couple" },
       { src: "/images/gallery-011.JPG", alt: "Photo 11 of the couple" },
       { src: "/images/gallery-012.JPG", alt: "Photo 12 of the couple" },
       { src: "/images/gallery-013.JPG", alt: "Photo 13 of the couple" },
