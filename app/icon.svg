@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">
+  <rect x="-50" y="-50" width="100" height="100" rx="22" fill="#FFF9F8"/>
+  <g fill="#F7DED5" stroke="#5C1B0E" stroke-opacity=".25" stroke-width="1.2">
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(0) scale(.8)"/>
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(60) scale(.8)"/>
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(120) scale(.8)"/>
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(180) scale(.8)"/>
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(240) scale(.8)"/>
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(300) scale(.8)"/>
+  </g>
+  <g fill="#D95338">
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(30) scale(.5)"/>
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(90) scale(.5)"/>
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(150) scale(.5)"/>
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(210) scale(.5)"/>
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(270) scale(.5)"/>
+    <path d="M0 0C-11-13-10-34 0-46C10-34 11-13 0 0Z" transform="rotate(330) scale(.5)"/>
+  </g>
+  <circle r="6" fill="#5C1B0E"/>
+</svg>
