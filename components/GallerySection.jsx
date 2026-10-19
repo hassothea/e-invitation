@@ -1,10 +1,6 @@
 "use client";
 
-<<<<<<< HEAD
 import Page from "./Page";
-=======
-import SectionFade from "./SectionFade";
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 import { FloralDivider } from "./FloralDecorations";
 import PhotoGallery from "./PhotoGallery";
 import VideoPlayer from "./VideoPlayer";
@@ -16,11 +12,7 @@ export default function GallerySection() {
   const { gallery, video, closing, couple, meta } = weddingData;
 
   return (
-<<<<<<< HEAD
     <Page id="gallery" className="overflow-hidden px-5 pb-16 pt-24 sm:px-14 lg:px-24">
-=======
-    <SectionFade id="gallery" className="overflow-hidden px-5 pb-16 pt-24 sm:px-14 lg:px-24">
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
       <div className="mx-auto w-full max-w-6xl">
         {show.video && (
           <div className="mx-auto mb-24 max-w-3xl">
@@ -59,19 +51,11 @@ export default function GallerySection() {
           )}
 
           <p className="mt-8 font-display text-2xl italic"><span className="gold-text">{closing.signoff}</span></p>
-<<<<<<< HEAD
           <p className="whitespace-nowrap font-display" style={{ fontSize: "clamp(1.3rem, 6.6vw, 2.25rem)" }}><span className="gold-text">
             {couple.groom.name} <span className="italic">&amp;</span> {couple.bride.name}
           </span></p>
           {(couple.groom.nameKm || couple.bride.nameKm) && (
             <p lang="km" className="mt-3 whitespace-nowrap font-khmer-display" style={{ fontSize: "clamp(1rem, 4.4vw, 1.25rem)" }}><span className="gold-text">
-=======
-          <p className="font-display text-4xl"><span className="gold-text">
-            {couple.groom.name} <span className="italic">&amp;</span> {couple.bride.name}
-          </span></p>
-          {(couple.groom.nameKm || couple.bride.nameKm) && (
-            <p lang="km" className="mt-3 font-khmer-display text-lg"><span className="gold-text">
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
               {[couple.groom.nameKm, couple.bride.nameKm].filter(Boolean).join("  &  ")}
             </span></p>
           )}
@@ -86,10 +70,6 @@ export default function GallerySection() {
         </div>
         )}
       </div>
-<<<<<<< HEAD
     </Page>
-=======
-    </SectionFade>
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
   );
 }

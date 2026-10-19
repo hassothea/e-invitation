@@ -7,24 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-<<<<<<< HEAD
     "links": "node scripts/generate-links.mjs",
     "optimize": "node scripts/optimize-images.mjs"
-=======
-    "links": "node scripts/generate-links.mjs"
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
   },
   "dependencies": {
     "framer-motion": "^11.11.9",
     "lucide-react": "^0.453.0",
     "next": "^14.2.25",
     "react": "18.3.1",
-<<<<<<< HEAD
     "react-dom": "18.3.1",
     "sharp": "^0.33.5"
-=======
-    "react-dom": "18.3.1"
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

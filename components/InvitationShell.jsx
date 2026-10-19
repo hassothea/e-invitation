@@ -1,22 +1,15 @@
 "use client";
 
-<<<<<<< HEAD
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useMotionValue, useReducedMotion } from "framer-motion";
 import { Backdrop } from "./FloralDecorations";
 import TopFade from "./TopFade";
 import MusicPlayer from "./MusicPlayer";
 import { CoverPage, WeddingOfPage } from "./IntroPages";
-=======
-import { Backdrop } from "./FloralDecorations";
-import TopFade from "./TopFade";
-import IntroStage from "./IntroStage";
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 import InfoSection from "./InfoSection";
 import ProgramSection from "./ProgramSection";
 import RsvpSection from "./RsvpSection";
 import GallerySection from "./GallerySection";
-<<<<<<< HEAD
 import { weddingData } from "@/config/weddingData";
 import { SECTIONS } from "@/lib/sections";
 import { attachPagerInput } from "@/lib/pager";
@@ -87,29 +80,12 @@ export default function InvitationShell({ guestName }) {
   }, [ap.enabled, ap.startDelayMs, ap.speed, ap.pageSeconds, reduce, goTo, lockMs]);
 
   const Current = PAGES[IDS[page]];
-=======
-import { useSectionNav } from "@/hooks/useSectionNav";
-import { weddingData } from "@/config/weddingData";
-import { SECTIONS } from "@/lib/sections";
-
-const IDS = SECTIONS.map((s) => s.id);
-
-/**
- * Client-side frame: floral background, section dots, keyboard paging.
- * The three "pages" are ordinary stacked sections of one scrolling document.
- */
-export default function InvitationShell({ guestName }) {
-  const { active, goTo } = useSectionNav(IDS, weddingData.motion?.autoScroll);
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 
   return (
     <>
       <Backdrop />
-<<<<<<< HEAD
       <TopFade progress={progress} />
       <MusicPlayer />
-=======
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 
       <nav aria-label="Invitation pages" className="fixed right-2.5 top-1/2 z-40 -translate-y-1/2 sm:right-4">
         <ul className="flex flex-col gap-3">
@@ -119,15 +95,9 @@ export default function InvitationShell({ guestName }) {
                 type="button"
                 onClick={() => goTo(i)}
                 aria-label={`Go to ${s.label}`}
-<<<<<<< HEAD
                 aria-current={page === i ? "true" : undefined}
-                className={`block w-2 rounded-full border border-gold/80 transition-all duration-300 ${
-                  page === i ? "h-7 bg-gold" : "h-2.5 bg-transparent hover:bg-gold/40"
-=======
-                aria-current={active === i ? "true" : undefined}
                 className={`block w-2.5 rounded-full border border-gold/80 transition-all duration-300 ${
-                  active === i ? "h-7 bg-gold" : "h-2.5 bg-transparent hover:bg-gold/40"
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
+                  page === i ? "h-7 bg-gold" : "h-2.5 bg-transparent hover:bg-gold/40"
                 }`}
               />
             </li>
@@ -135,7 +105,6 @@ export default function InvitationShell({ guestName }) {
         </ul>
       </nav>
 
-<<<<<<< HEAD
       <main className="fixed inset-x-0 top-0 z-10 h-dvh">
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
@@ -151,17 +120,6 @@ export default function InvitationShell({ guestName }) {
           </motion.div>
         </AnimatePresence>
       </main>
-=======
-      <main className="relative z-10">
-        <IntroStage guestName={guestName} />
-        {IDS.includes("info") && <InfoSection />}
-        {IDS.includes("program") && <ProgramSection />}
-        {IDS.includes("rsvp") && <RsvpSection guestName={guestName} />}
-        {IDS.includes("gallery") && <GallerySection />}
-      </main>
-
-      <TopFade />
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
     </>
   );
 }

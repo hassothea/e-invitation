@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-<<<<<<< HEAD
   poweredByHeader: false,
   compress: true,
   images: {
@@ -16,8 +15,6 @@ const nextConfig = {
     const cache = [{ key: "Cache-Control", value: "public, max-age=86400, stale-while-revalidate=604800" }];
     return ["/images/:path*", "/fonts/:path*", "/audio/:path*"].map((source) => ({ source, headers: cache }));
   },
-=======
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 };
 
 module.exports = nextConfig;

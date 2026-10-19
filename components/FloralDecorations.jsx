@@ -56,12 +56,8 @@ function Sparkle({ index, min, max }) {
       transition={{ duration: spot.seconds, times: [0, 0.45, 1], ease: "easeInOut" }}
       onAnimationComplete={next}
     >
-<<<<<<< HEAD
       <svg viewBox="-12 -12 24 24" className="h-full w-full">
         <circle r="11" className="fill-gold/25" />
-=======
-      <svg viewBox="-12 -12 24 24" className="h-full w-full" style={{ filter: "drop-shadow(0 0 3px rgb(var(--c-gold) / 0.9))" }}>
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
         <path d={STAR} className="fill-gold" />
         <path d={STAR} transform="scale(0.42)" className="fill-gold-light" />
       </svg>

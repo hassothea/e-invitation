@@ -42,11 +42,7 @@ export default function RsvpForm({ guestName = "" }) {
   }
 
   return (
-<<<<<<< HEAD
     <div className="rounded-[1.25rem] border border-gold/40 bg-black/20 p-6 shadow-petal sm:p-8">
-=======
-    <div className="rounded-[1.25rem] border border-gold/40 bg-black/20 p-6 shadow-petal backdrop-blur-sm sm:p-8">
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
       <h3 className="font-display text-4xl"><span className="gold-text">Will you join us?</span></h3>
       <p className="mt-1 text-ink/75">Please reply by {rsvp.deadline}.</p>
 

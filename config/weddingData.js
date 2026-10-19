@@ -25,11 +25,7 @@ export const weddingData = {
     info: true, // the invitation page: parents, names, photo circles, date and place
     schedule: true, // wedding program + add to calendar
     map: true, // venue, map, directions (beside the schedule; below it on phones)
-<<<<<<< HEAD
-    video: false, // highlight video, above the photos (also hidden when video.src is empty)
-=======
     video: true, // highlight video, above the photos (also hidden when video.src is empty)
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
     rsvp: false, // the "Will you join us?" form
     gallery: true, // the photos
     closing: true, // thank-you message at the very end
@@ -92,7 +88,6 @@ export const weddingData = {
   /* ---------- Automatic movement ----------
      Both are switched off for guests who use "reduce motion".      */
   motion: {
-<<<<<<< HEAD
     // How the pages change. ONE scroll, swipe or key press moves to the next page:
     // the old page fades out slowly, then the new page fades in.
     pageFade: {
@@ -106,28 +101,13 @@ export const weddingData = {
     autoScroll: {
       enabled: true,
       startDelayMs: 3000, // wait this long after the page loads
-      pageSeconds: 2, // how long each page stays before fading to the next
-      speed: 140, // pixels per second for long pages: 60 = slow, 120 = brisk, 200 = fast
-=======
-    // The invitation drifts down on its own: the page you are on slowly
-    // fades out while the next one fades in. It starts a few seconds after
-    // the page loads and keeps going until the guest clicks, taps, scrolls
-    // or presses a key (or reaches the end).
-    autoScroll: {
-      enabled: true,
-      startDelayMs: 3000, // wait this long after the page loads
-      speed: 120, // pixels per second:  20 = very slow, 40 = slow,
-      //             80 = medium, 120 = brisk, 200 = fast.  Change to taste.
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
+      pageSeconds: 6, // how long each page stays before fading to the next
+      speed: 120, // pixels per second for long pages: 60 = slow, 120 = brisk, 200 = fast
     },
 
     // Random twinkling sparkles in the background.
     sparkles: {
-<<<<<<< HEAD
       count: 12, // how many at once. 0 = off
-=======
-      count: 14, // how many at once. 0 = off
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
       size: { min: 8, max: 18 }, // size range, in pixels
     },
 
@@ -145,7 +125,6 @@ export const weddingData = {
     },
   },
 
-<<<<<<< HEAD
   /* ---------- Background music ----------
      src: a file you put in public/audio (for example "/audio/wedding.mp3"),
           or a YouTube link (https://www.youtube.com/watch?v=XXXXXXXXXXX).
@@ -153,15 +132,13 @@ export const weddingData = {
      music starts when the guest presses "Open invitation"; the round sound
      button (bottom right) lets them pause or play at any time.            */
   music: {
-    src: "",
+    src: "https://www.youtube.com/watch?v=Mn_qLC7_ueA",
     startOn: "open", // "open" = starts at "Open invitation"; "button" = only from the sound button
     volume: 0.6, // 0 (silent) to 1 (full)
     loop: true,
     showButton: true,
   },
 
-=======
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
   /* ---------- Cambodian touches ---------- */
   khmer: {
     angkorSilhouette: true, // very faint Angkor Wat shadow along the bottom
@@ -171,11 +148,7 @@ export const weddingData = {
      The cover fades out, "The wedding of" fades in, then fades out into the invitation page. */
   hero: {
     titleKm: "សិរីមង្គលអាពាហ៍ពិពាហ៍", // heading on the cover and the invitation page
-<<<<<<< HEAD
-    monogram: "សុធា & និច", // inside the crest on the cover
-=======
-    monogram: "ធ & ន", // inside the crest on the cover
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
+    monogram: "សុធា & ផានិច", // inside the crest on the cover
     weddingOf: "The wedding of", // the line above the names on page 2
     weddingOfKm: "", // optional: the same in Khmer
     inviteKm: "សូមគោរពអញ្ជើញ", // line above the guest's name
@@ -257,25 +230,6 @@ export const weddingData = {
     intro: "A few frames from the road to this day.",
     images: [
       { src: "/images/gallery-1.jpg", alt: "Photo 1 of the couple" },
-<<<<<<< HEAD
-      { src: "/images/gallery-2.JPG", alt: "Photo 2 of the couple" },
-      { src: "/images/gallery-3.JPG", alt: "Photo 3 of the couple" },
-      { src: "/images/gallery-4.JPG", alt: "Photo 4 of the couple" },
-      { src: "/images/gallery-5.JPG", alt: "Photo 5 of the couple" },
-      { src: "/images/gallery-6.JPG", alt: "Photo 6 of the couple" },
-      { src: "/images/gallery-7.JPG", alt: "Photo 7 of the couple" },
-      { src: "/images/gallery-8.JPG", alt: "Photo 8 of the couple" },
-      { src: "/images/gallery-9.JPG", alt: "Photo 9 of the couple" },
-      { src: "/images/gallery-10.JPG", alt: "Photo 10 of the couple" },
-      { src: "/images/gallery-11.JPG", alt: "Photo 11 of the couple" },
-      { src: "/images/gallery-12.JPG", alt: "Photo 12 of the couple" },
-      { src: "/images/gallery-13.JPG", alt: "Photo 13 of the couple" },
-      { src: "/images/gallery-14.JPG", alt: "Photo 14 of the couple" },
-      { src: "/images/gallery-15.JPG", alt: "Photo 15 of the couple" },
-      { src: "/images/gallery-16.JPG", alt: "Photo 16 of the couple" },
-      { src: "/images/gallery-17.JPG", alt: "Photo 17 of the couple" },
-      { src: "/images/gallery-18.JPG", alt: "Photo 18 of the couple" },
-=======
       { src: "/images/gallery-2.jpg", alt: "Photo 2 of the couple" },
       { src: "/images/gallery-3.jpg", alt: "Photo 3 of the couple" },
       { src: "/images/gallery-4.jpg", alt: "Photo 4 of the couple" },
@@ -293,7 +247,6 @@ export const weddingData = {
       { src: "/images/gallery-16.jpg", alt: "Photo 16 of the couple" },
       { src: "/images/gallery-17.jpg", alt: "Photo 17 of the couple" },
       { src: "/images/gallery-18.jpg", alt: "Photo 18 of the couple" },
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
     ],
   },
 
@@ -305,11 +258,7 @@ export const weddingData = {
      Leave src empty ("") to hide the video. It appears above the photos.   */
   video: {
     title: "Our story in a few minutes",
-<<<<<<< HEAD
-    src: "https://www.youtube.com/watch?v=Mn_qLC7_ueA",
-=======
     src: "",
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
     type: "auto", // "auto" | "youtube" | "vimeo" | "file"
     poster: "", // optional cover image for the video (leave empty for none)
   },
@@ -319,7 +268,7 @@ export const weddingData = {
     name: "Sereimongkol Restaurant",
     nameKm: "ភោជនីយដ្ឋាន សិរីមង្គល",
     short: "Bavel, Battambang", // shown under the date on the cover
-    addressLines: ["Bavel 1 Village, Bavel Commune", "Bavel District, Battambang Province"],
+    addressLines: ["Bavel Village 1, Bavel Commune", "Bavel District, Battambang Province"],
     addressKm: "ភូមិបវេល១ ឃុំបវេល ស្រុកបវេល ខេត្តបាត់ដំបង",
     coverKm:
       "ស្ថិតនៅ ភោជនីយដ្ឋាន សិរីមង្គល ភូមិបវេល១ ឃុំបវេល ស្រុកបវេល ខេត្តបាត់ដំបង (ខាងកើតធនាគារABA ចម្ងាយ50m)",

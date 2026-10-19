@@ -2,7 +2,6 @@
 
 A digital wedding invitation built with **Next.js (App Router)**, **Tailwind CSS** and **Framer Motion**. No database, no backend, no environment variables, so it hosts free on Vercel.
 
-<<<<<<< HEAD
 **One dark-brown, gold-text invitation. Six pages, shown one at a time.**
 **One scroll, swipe or key press: the old page fades out slowly, then the new page fades in.**
 
@@ -14,15 +13,6 @@ A digital wedding invitation built with **Next.js (App Router)**, **Tailwind CSS
 6. **Video, 14 photos in two columns, and the thank-you.**
 
 A page taller than the screen scrolls inside itself first; one more scroll at its end moves to the next page. The invitation can also turn its own pages (auto-play), starting 3 seconds after it loads, until a guest clicks, taps or scrolls.
-=======
-**One dark-brown, gold-text invitation, five pages that fade into each other**
-
-1. **Cover** (full screen): Khmer title, crest, the guest's name, and an **Open invitation** button. It fades out.
-2. **"The wedding of"** (full screen): the couple, Khmer names large with the English name smaller below each. It fades in, then fades out.
-3. **The invitation**: parents, the invitation text, groom on the left and bride on the right with a **round photo slot** under each name, then date and place.
-4. **Program and location**: the two-day program with a gold timeline, beside the map or your QR code.
-5. **RSVP**, then **video, 14 photos in two columns, and the thank-you** at the very end.
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 
 ---
 
@@ -94,7 +84,6 @@ In links, a space is `+` or `%20`, and `&` must be written `%26`. Khmer names al
 | **All text, dates, photos, program, venue, switches** | `config/weddingData.js` |
 | **All colors** | `app/globals.css` (the `:root` block at the top) |
 | Page title, link preview, Latin fonts, Khmer font loading | `app/layout.js` |
-<<<<<<< HEAD
 | Cover and "The wedding of" pages | `components/IntroPages.jsx` |
 | Page-by-page navigation, fades, auto-play wiring | `components/InvitationShell.jsx` |
 | Scroll / swipe / key handling (one scroll = one page) | `lib/pager.js` |
@@ -104,9 +93,6 @@ In links, a space is `+` or `%20`, and `&` must be written `%26`. Khmer names al
 | Image and caching settings | `next.config.js` |
 | One-click photo shrinker | `scripts/optimize-images.mjs` (run `npm run optimize`) |
 | Your music files | `public/audio/` |
-=======
-| Cover and "The wedding of" (the two full-screen scenes) | `components/IntroStage.jsx` |
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 | The invitation page (parents, names, round photos, date) | `components/InfoSection.jsx` |
 | Program and map or QR | `components/ProgramSection.jsx` |
 | The gold timeline rows and icons | `components/Timeline.jsx` |
@@ -116,14 +102,8 @@ In links, a space is `+` or `%20`, and `&` must be written `%26`. Khmer names al
 | Crest and gold corner brackets | `components/Ornaments.jsx` |
 | Sparkles, faint Angkor Wat, divider | `components/FloralDecorations.jsx` |
 | The page background (brown and pattern) | `lib/background.js` |
-<<<<<<< HEAD
 | One page's wrapper | `components/Page.jsx` |
 | Fade at the top of the screen | `components/TopFade.jsx` |
-=======
-| Fade between pages | `components/SectionFade.jsx` |
-| Fade at the top of the screen | `components/TopFade.jsx` |
-| Auto-scroll logic | `lib/autoScroll.js` |
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 | Gold text and shimmer styles | `app/globals.css` |
 | Font families used by Tailwind | `tailwind.config.js` |
 | Your pictures | `public/images/` |
@@ -238,7 +218,6 @@ See sections 9 and 10. `closing` has `heading`, `message` (and `…Km` versions)
 ### 4.10 `motion`
 See section 7.
 
-<<<<<<< HEAD
 ### 4.11 `music`: background music
 ```js
 music: {
@@ -256,8 +235,6 @@ music: {
 
 ---
 
-=======
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 ---
 
 ## 5. Colors
@@ -304,11 +281,7 @@ The brown comes from `--c-cream`; the faint damask pattern and the soft dark edg
 - **Maroon instead of brown** (like the cover sample on your phone): set `--c-cream: 92 20 22`.
 - **Body text color:** `--c-ink`.
 - **Make other text gold:** in a component, wrap the text in `<span className="gold-text">…</span>`. Always use an inner `<span>`, never put the class on the heading itself, or tall Khmer marks and letter tails get cut off.
-<<<<<<< HEAD
 - **Plain light text instead of gold on the cover:** in `IntroPages.jsx` replace `<span className="gold-text">` with `<span className="text-gold-light">`.
-=======
-- **Plain light text instead of gold on the cover:** in `IntroStage.jsx` replace `<span className="gold-text">` with `<span className="text-gold-light">`.
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 
 ---
 
@@ -329,13 +302,8 @@ Most headings and text are sized with Tailwind classes. Change the class to chan
 
 **Example: make the "Wedding Program" heading bigger.** Open `components/ProgramSection.jsx`, find `<h2 className="font-display text-4xl font-light sm:text-5xl">` and change it to `text-5xl … sm:text-6xl`.
 
-<<<<<<< HEAD
 ### 6.2 The cover and "The wedding of" (`components/IntroPages.jsx`)
 These two pages always fill the screen, so their sizes use `clamp(smallest, preferred, largest)`: `clamp(1.5rem, min(6.6vw, 6svh), 3.4rem)` means "6.6% of the screen width or 6% of the screen height, whichever is smaller, but never smaller than 1.5rem or bigger than 3.4rem". To make a line bigger, raise the numbers (the last number is the maximum on big screens). Current values:
-=======
-### 6.2 The cover and "The wedding of" (`components/IntroStage.jsx`)
-These two scenes always fill the screen, so their sizes use `clamp(smallest, preferred, largest)`: `clamp(1.5rem, min(6.6vw, 6svh), 3.4rem)` means "6.6% of the screen width or 6% of the screen height, whichever is smaller, but never smaller than 1.5rem or bigger than 3.4rem". To make a line bigger, raise the numbers (the last number is the maximum on big screens). Current values:
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 
 | Line | `fontSize` |
 |---|---|
@@ -345,20 +313,12 @@ These two scenes always fill the screen, so their sizes use `clamp(smallest, pre
 | Cover: "សូមគោរពអញ្ជើញ" / English | `clamp(1rem, 3svh, 1.5rem)` / `clamp(.85rem, 2.2svh, 1.1rem)` |
 | Cover: guest name | `clamp(1.4rem, min(6vw, 5svh), 2.6rem)` |
 | "The wedding of" | `clamp(1.3rem, 4.6svh, 2.2rem)` |
-<<<<<<< HEAD
 | **Names in Khmer** | `clamp(1.8rem, min(9.5vw, 10svh), 4.6rem)` |
 | **Names in English (below the Khmer)** | `clamp(1.3rem, min(5.6vw, 4.6svh), 2.4rem)` |
 | "&" between the names | `clamp(1.6rem, 6svh, 3rem)` |
 | Date under the names | `clamp(.95rem, 2.4svh, 1.2rem)` |
 
 - **Every name stays on one line** (`whiteSpace: "nowrap"`). If a very long name does not fit a small phone, lower the `vw` number inside that name's `clamp(…)` (for example `9.5vw` to `8vw`).
-=======
-| Names in Khmer (large) | `clamp(2rem, min(10.5vw, 11svh), 5rem)` |
-| Names in English (smaller, below) | `clamp(1.1rem, min(4vw, 3.8svh), 1.9rem)` |
-| "&" between the names | `clamp(1.6rem, 6svh, 3rem)` |
-| Date under the names | `clamp(.95rem, 2.4svh, 1.2rem)` |
-
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 - **Crest size:** `w-[min(44vw,24svh,230px)]` on the `<Crest>` (change `230px` for a bigger or smaller crest on computers).
 - **Open button:** `px-10 py-2.5` (width and height of the button), `bg-gold` (its color).
 - **Spacing:** the `marginTop` values (like `"2.4svh"`) are the gaps between lines.
@@ -367,11 +327,7 @@ These two scenes always fill the screen, so their sizes use `clamp(smallest, pre
 - **Width of the page:** `max-w-3xl` (use `max-w-2xl` narrower, `max-w-4xl` wider).
 - Crest: `w-24 sm:w-32`. Khmer title: the `text-2xl` (phones) and `sm:text-4xl` (larger screens) classes. Parents: `text-xl`.
 - Invitation paragraph: `text-base … sm:text-lg` and `leading-[2.1]` (the line spacing; Khmer needs generous spacing).
-<<<<<<< HEAD
 - Names (each on one line): Khmer `clamp(1.05rem, 5vw, 2.25rem)`, English `clamp(1.2rem, 5.4vw, 2rem)`.
-=======
-- Names: Khmer uses `text-2xl` and `sm:text-4xl`; English uses `text-lg sm:text-2xl`.
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 - **Round photos:** `w-[min(36vw,12rem)]` (12rem = 192 px on computers; raise it for bigger photos), border thickness `border-2`, gap between the ring and the photo `p-1.5`.
 - Page padding: `px-6 py-28 sm:px-14`.
 
@@ -387,10 +343,7 @@ These two scenes always fill the screen, so their sizes use `clamp(smallest, pre
 - Gold border thickness: the `p-1.5` (phones) and `sm:p-2` (larger screens) classes on the photo button.
 - Gaps between photos: `gap-x-4 gap-y-7 sm:gap-x-8 sm:gap-y-10`. Overall gallery width: `max-w-3xl` (use `max-w-2xl` for smaller photos, `max-w-4xl` for bigger).
 - Video width: `max-w-3xl` in `GallerySection.jsx`.
-<<<<<<< HEAD
 - Thank-you names (one line): `clamp(1.3rem, 6.6vw, 2.25rem)` English and `clamp(1rem, 4.4vw, 1.25rem)` Khmer, in `GallerySection.jsx`.
-=======
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 
 ### 6.6 Small decorations
 - **Corner brackets** (invitation and program pages): `w-14 sm:w-24` in `components/Ornaments.jsx` (`CornerOrnaments`). Remove `<CornerOrnaments />` from a page to remove them there.
@@ -405,21 +358,15 @@ These two scenes always fill the screen, so their sizes use `clamp(smallest, pre
 ### 7.1 Settings in the config (`motion`)
 ```js
 motion: {
-<<<<<<< HEAD
   pageFade:   { outSeconds: 1.6, inSeconds: 1.8 },
   autoScroll: { enabled: true, startDelayMs: 3000, pageSeconds: 6, speed: 120 },
   sparkles:   { count: 12, size: { min: 8, max: 18 } },
-=======
-  autoScroll: { enabled: true, startDelayMs: 3000, speed: 120 },
-  sparkles:   { count: 14, size: { min: 8, max: 18 } },
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
   romance:    { glow: true, shimmer: true },
   topFade:    { enabled: true, heightVh: 16 },
 },
 ```
 | Setting | What it does |
 |---|---|
-<<<<<<< HEAD
 | `pageFade.outSeconds` | How long the old page takes to fade out (bigger = slower, more romantic) |
 | `pageFade.inSeconds` | How long the new page takes to fade in |
 | `autoScroll.enabled` | The invitation turns its own pages (`false` = guests move by hand) |
@@ -439,42 +386,14 @@ motion: {
 - **Auto-play** moves through the pages by itself: first 3 seconds after loading, then each page stays `pageSeconds` (a long page is scrolled slowly to its end first, then rests a moment). It **stops for good** the moment a guest clicks, taps, scrolls, swipes or presses a key, and it stops on the last page.
 - **Quicker or slower, more or less romantic:** change `pageFade` (try `2.4` / `2.6` for very slow, `1` / `1` for brisk).
 - All motion is switched off automatically for guests whose device is set to "reduce motion" (pages then change instantly and there is no auto-play).
-=======
-| `autoScroll.enabled` | The page drifts down by itself (`false` = guests scroll by hand) |
-| `autoScroll.startDelayMs` | Wait this long after the page loads (3000 = 3 seconds) |
-| `autoScroll.speed` | Speed in pixels per second: `20` very slow, `60` slow, `120` brisk, `200` fast |
-| `sparkles.count` | How many sparkles twinkle at once (`0` = none) |
-| `sparkles.size` | Smallest and largest sparkle, in pixels |
-| `romance.glow` | The warm glow breathing behind the crest on the cover |
-| `romance.shimmer` | The gentle light sweeping across the gold text |
-| `topFade.enabled` / `heightVh` | Content softly fades as it leaves the top of the screen; `heightVh` is the height of that fade as a percentage of the screen |
-
-Auto-scroll **stops for good** the moment a guest clicks, taps, scrolls, swipes, presses a key or drags the scrollbar, and when it reaches the end. All motion is switched off automatically for guests whose device is set to "reduce motion".
-
-### 7.2 How the pages fade
-- **Cover → "The wedding of" → invitation:** these are scroll-driven. The cover fades out, then "The wedding of" fades in, holds, and fades out. The numbers are in `components/IntroStage.jsx`:
-```js
-cover:  [0, 0.08, 0.3],            // 0 = start of the stage, 1 = end
-second: [0.3, 0.52, 0.72, 0.94],
-```
-Reading `second`: it starts fading in at 30%, is fully visible from 52% to 72%, and is gone by 94%. Move the numbers closer together for quicker fades, or further apart for slower, longer holds. The stage's length is `h-[300svh]` (3 screens): make it `h-[400svh]` for slower scenes overall.
-- **"Open invitation" button:** scrolls to the middle of "The wedding of". That target is `1.2 * window.innerHeight` in `IntroStage.jsx`.
-- **All later pages:** each page fades out as it leaves and the next fades in afterwards. The two ranges are in `components/SectionFade.jsx`: `["start 40%", "start 10%"]` (fade in) and `["end 90%", "end 60%"]` (fade out). A wider gap between the numbers gives a slower fade.
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 
 ### 7.3 Speeds you can change in the code
 | What | File and text to find | Default |
 |---|---|---|
-<<<<<<< HEAD
 | Glow breathing behind the crest | `app/globals.css`: `animation: breathe 7s ease-in-out infinite` | 7 s per cycle |
 | Glow size and warmth | `IntroPages.jsx`: `min(92vw, 64svh)`, `rgb(var(--c-gold) / 0.35)` | bigger number = bigger/stronger |
 | Cover text appearing | `IntroPages.jsx`: `rise(0.2)`, `rise(0.5)`, `rise(0.8)` (seconds of delay) | each block 0.3 s after the last |
 | Fade-up length | `app/globals.css`: `animation: rise 1s …` | 1 s |
-=======
-| Glow breathing behind the crest | `IntroStage.jsx`: `scale: [1, 1.08, 1]`, `duration: 7` | 7 s per cycle |
-| Glow size and warmth | `IntroStage.jsx`: `min(92vw, 64svh)`, `rgb(var(--c-gold) / 0.35)` | bigger number = bigger/stronger |
-| Cover text appearing | `IntroStage.jsx`: `staggerChildren: 0.18`, `delayChildren: 0.3` | each line 0.18 s after the last |
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 | Gold shimmer speed | `app/globals.css`: `animation: gold-sweep 9s linear infinite` | 9 s per sweep (smaller = faster) |
 | Sparkle twinkle length | `FloralDecorations.jsx`: `seconds: rand(1.8, 3.6)` | 1.8 to 3.6 s |
 | Pause between sparkles | `FloralDecorations.jsx`: `rand(100, 1800)` | 0.1 to 1.8 s |
@@ -534,7 +453,6 @@ mkdir out
 magick mogrify -path out -resize 1200x1500^ -gravity center -extent 1200x1500 -quality 78 -strip *.jpg
 ```
 
-<<<<<<< HEAD
 ### Make it fast (images, fonts, music)
 The invitation is built to load quickly, and shows only one page at a time (the map and photos load only when a guest reaches them).
 
@@ -551,8 +469,6 @@ It writes small versions to `public/images/` (4:5 portrait, 1200 x 1500, quality
 - **Video:** use an unlisted YouTube link rather than a large mp4.
 - **Older phones:** lower `motion.sparkles.count` (for example `6`), or set `romance.shimmer: false`.
 
-=======
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 ### The couple's round photos (`couple.groom.photo`, `couple.bride.photo`)
 Save a square-ish portrait (about 600 × 600 px) in `public/images/` and set `photo: "/images/groom.jpg"`. It is cropped to a circle with a gold ring. With no photo, the ring shows the initial letter.
 
@@ -602,28 +518,18 @@ Other settings: `deadline` (text shown on the form), `maxGuests` (the guest-coun
 | Remove the video | Leave `video.src` empty |
 | Hide the RSVP page | `sections.rsvp: false` |
 | Hide the invitation page | `sections.info: false` |
-<<<<<<< HEAD
 | How long each page stays in auto-play | `motion.autoScroll.pageSeconds` |
 | Turn auto-play off | `motion.autoScroll.enabled: false` |
 | Slower or faster page fades | `motion.pageFade` (`outSeconds`, `inSeconds`) |
 | Add background music | `music.src` (mp3 in `public/audio/` or a YouTube link) |
 | Shrink my photos | `npm run optimize` (section 9) |
-=======
-| Slower or faster auto-scroll | `motion.autoScroll.speed` |
-| Turn auto-scroll off | `motion.autoScroll.enabled: false` |
-| Longer or shorter cover and "The wedding of" | `h-[300svh]` and the `cover`/`second` numbers in `IntroStage.jsx` |
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 | More or fewer sparkles | `motion.sparkles.count` |
 | Remove the glow or the shimmer | `motion.romance.glow` / `shimmer` to `false` |
 | Two-column program | `program.columns: 2` |
 | Show my QR code | `venue.display: "qr"` and add `public/images/location-qr.png` |
 | Change the brown | `--c-cream` in `app/globals.css` |
 | Fainter or stronger background pattern | `fill-opacity` / `stroke-opacity` in `lib/background.js` |
-<<<<<<< HEAD
 | Bigger names | the `clamp(…)` on the names in `IntroPages.jsx` |
-=======
-| Bigger cover names | the `clamp(…)` on the names in `IntroStage.jsx` |
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 | Real Khmer Borann font | section 8 |
 | Add a program row | Copy an `{ time: …, title: … }` line in `program.days[].items` |
 | Remove the fade at the top | `motion.topFade.enabled: false` |
@@ -640,14 +546,9 @@ Other settings: `deadline` (text shown on the form), `maxGuests` (the guest-coun
 - **Map shows the wrong place:** give a more specific `venue.mapQuery` or use `venue.mapEmbedUrl`.
 - **Calendar time is off:** set `event.timezone` to your venue's zone (`Asia/Phnom_Penh` for Cambodia). Times are the venue's local time.
 - **QR code does not show:** make sure the file is at `public/images/location-qr.png` and `venue.display` is `"qr"`.
-<<<<<<< HEAD
 - **Cover or "The wedding of" feels cramped on a short screen:** lower the `clamp(…)` maximums for the lines in `IntroPages.jsx`, or use shorter names in `cover`.
 - **No music:** check `music.src` and that the file is in `public/audio/`. Browsers only allow sound after a tap, so press **Open invitation**, or the round sound button (bottom right). YouTube links can be blocked by the video's owner; an mp3 always works.
 - **Pages change too fast or too slow:** `motion.pageFade`. **A scroll did nothing:** a page change was still running (about 2.5 seconds); try again.
 - **Photos look slow:** run `npm run optimize` and use the shrunk files (section 9).
 - **No motion at all:** the guest's device is set to "reduce motion", which turns animations (and auto-play) off on purpose.
-=======
-- **Cover or "The wedding of" feels cramped on a short screen:** lower the `clamp(…)` maximums for the lines in `IntroStage.jsx`, or use shorter names in `cover`.
-- **No motion at all:** the guest's device is set to "reduce motion", which turns animations off on purpose.
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 - **Changes do not appear on the live site:** commit and push to GitHub; Vercel redeploys in about a minute.

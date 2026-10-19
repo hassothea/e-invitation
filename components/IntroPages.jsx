@@ -27,43 +27,42 @@ export function CoverPage({ guestName, onOpen }) {
             style={{
               width: "min(92vw, 64svh)",
               height: "min(92vw, 64svh)",
-              background: "radial-gradient(closest-side, rgb(var(--c-gold)/0.12), rgb(var(--c-blush) / 0.12) 60%, transparent 95%)",
+              background: "radial-gradient(closest-side, rgb(var(--c-gold) / 0.01), rgb(var(--c-blush) / 0.11) 60%, transparent 58%)",
             }}
           />
         )}
-        <Crest className="relative w-[min(360vw,40svh,320px)] whitespace-nowrap">
-          <span className="font-display" style={{ fontSize: "clamp(3rem, min(4vw, 6svh), 6rem)" }}>
+
+          <span className="font-display" style={{ fontSize: "clamp(1.4rem, min(7vw, 5.6svh), 3rem)" }}>
             <span className="gold-text">{hero.monogram}</span>
           </span>
-        </Crest>
-        <p className="relative font-display" style={{ fontSize: "clamp(1.6rem, min(5vw, 6svh), 4rem)", marginTop: "2svh" }}>
+        <p className="relative font-display" style={{ fontSize: "clamp(1.2rem, min(5vw, 4svh), 2.8rem)", marginTop: "2.5svh" }}>
           <span className="gold-text">{`${a} & ${b}`}</span>
         </p>
       </div>
 
       <div className="rise flex flex-col items-center" style={rise(0.8)}>
-        <p lang="km" className="font-khmer-display" style={{ fontSize: "clamp(1rem, 3svh, 1.5rem)", lineHeight: 1.7 }}>
+        <p lang="km" className="font-khmer-display" style={{ fontSize: "clamp(1rem, 3svh, 1.5rem)", lineHeight: 4 }}>
           <span className="gold-text">{hero.inviteKm}</span>
         </p>
-        <p className="font-display italic text-ink/80" style={{ fontSize: "clamp(.85rem, 2.2svh, 1.1rem)" }}>
+        <p className="font-display italic text-ink/80" style={{ fontSize: "clamp(.9rem, 2.2svh, 2.1rem)", lineHeight: 2 }}>
           {hero.invite}
         </p>
-        <p className="font-display font-semibold" style={{ fontSize: "clamp(1.4rem, min(6vw, 5svh), 2.6rem)", lineHeight: 1.4, marginTop: "1svh" }}>
+        <p className="font-display" style={{ fontSize: "clamp(1.4rem, min(6vw, 5svh), 2.1rem)", lineHeight: 1.8, marginTop: "2svh" }}>
           <span className="gold-text">{guestName || guest.fallback}</span>
         </p>
         <button
           type="button"
           onClick={onOpen}
           className="rounded-xl bg-gold px-10 py-2.5 text-wine shadow-lg transition-colors hover:bg-gold-light"
-          style={{ marginTop: "2.4svh" }}
+          style={{ marginTop: "2.8svh" }}
         >
           <span lang="km" className="block font-khmer-display text-lg leading-snug">{hero.openKm}</span>
           <span className="block text-xs">{hero.open}</span>
         </button>
-        <p lang="km" className="font-khmer text-ink/85" style={{ fontSize: "clamp(.75rem, 2svh, .95rem)", marginTop: "1.6svh" }}>
+        <p lang="km" className="font-khmer text-ink/85" style={{ fontSize: "clamp(.75rem, 2svh, 1.2rem)", marginTop: "2svh" }}>
           {hero.openHintKm}
         </p>
-        <p className="text-xs text-ink/70">{hero.openHint}</p>
+        <p className="text-xs text-ink/85">{hero.openHint}</p>
       </div>
     </section>
   );
@@ -75,11 +74,11 @@ export function WeddingOfPage() {
   const one = { whiteSpace: "nowrap" };
   return (
     <section id="wedding" className="relative flex min-h-full flex-col items-center justify-center px-4 text-center">
-      <p className="font-display italic" style={{ fontSize: "clamp(1.3rem, 4.6svh, 2.2rem)" }}>
+      <p className="font-display italic" style={{ fontSize: "clamp(1.3rem, 4.6svh, 2.8rem)" }}>
         <span className="gold-text">{hero.weddingOf}</span>
       </p>
       {hero.weddingOfKm && (
-        <p lang="km" className="font-khmer-display" style={{ fontSize: "clamp(1.1rem, 3.6svh, 1.8rem)", lineHeight: 1.7 }}>
+        <p lang="km" className="font-khmer-display" style={{ fontSize: "clamp(1.1rem, 3.6svh, 1.8rem)", lineHeight: 1.6 }}>
           <span className="gold-text">{hero.weddingOfKm}</span>
         </p>
       )}
@@ -87,7 +86,7 @@ export function WeddingOfPage() {
       {[couple.groom, couple.bride].map((person, i) => (
         <div key={person.name} style={{ marginTop: i === 0 ? "5svh" : 0 }}>
           {i === 1 && (
-            <p className="font-display italic" style={{ fontSize: "clamp(1.6rem, 6svh, 3rem)", margin: "2.4svh 0" }}>
+            <p className="font-display italic" style={{ fontSize: "clamp(1.6rem, 6svh, 5rem)", margin: "2.8svh 0" }}>
               <span className="gold-text">&amp;</span>
             </p>
           )}
@@ -106,7 +105,7 @@ export function WeddingOfPage() {
         </div>
       ))}
 
-      <p className="font-display text-ink/85" style={{ fontSize: "clamp(.95rem, 2.4svh, 1.2rem)", marginTop: "6svh" }}>
+      <p className="font-display text-ink/80" style={{ fontSize: "clamp(.95rem, 2.4svh, 2.1rem)", marginTop: "6svh" }}>
         {`${formatLongDate(event.start)} · ${event.timeLabel}`}
       </p>
     </section>

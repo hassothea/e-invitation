@@ -2,10 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useCallback, useEffect, useState } from "react";
-<<<<<<< HEAD
 import Image from "next/image";
-=======
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
@@ -36,13 +33,8 @@ export default function PhotoGallery({ images }) {
             <motion.li
               key={img.src}
               className={`relative ${i === lonely ? "col-span-2 mx-auto w-[calc(50%-0.5rem)] sm:w-[calc(50%-1rem)]" : ""}`}
-<<<<<<< HEAD
               initial={reduce ? false : { opacity: 0, y: 24, scale: 0.98 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-=======
-              initial={reduce ? false : { opacity: 0, y: 30, scale: 0.97, filter: "blur(6px)" }}
-              whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
               viewport={{ once: true, amount: 0.2, margin: "0px 0px -8% 0px" }}
               transition={{ duration: 1.7, ease: [0.22, 1, 0.36, 1], delay: column * 0.4 }}
             >
@@ -53,7 +45,6 @@ export default function PhotoGallery({ images }) {
                 className="group block w-full rounded-[10px] bg-gold p-1.5 shadow-petal sm:p-2"
               >
                 <span className="relative block aspect-[4/5] overflow-hidden rounded-[6px] bg-black/30">
-<<<<<<< HEAD
                   <Image
                     src={img.src}
                     alt={img.alt}
@@ -63,14 +54,6 @@ export default function PhotoGallery({ images }) {
                     draggable={false}
                     unoptimized={img.src.endsWith(".svg")}
                     className="object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105"
-=======
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    loading="lazy"
-                    draggable={false}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105"
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
                   />
                 </span>
               </button>
@@ -125,18 +108,13 @@ function Lightbox({ items, index, onClose, onIndex }) {
       role="dialog"
       aria-modal="true"
       aria-label="Photo viewer"
-<<<<<<< HEAD
       className="fixed inset-0 z-[100] grid place-items-center bg-wine/90 p-4"
-=======
-      className="fixed inset-0 z-[100] grid place-items-center bg-wine/90 p-4 backdrop-blur-sm"
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.25 }}
       onClick={onClose}
     >
-<<<<<<< HEAD
       <Image
         src={items[index].src}
         alt={items[index].alt}
@@ -148,13 +126,6 @@ function Lightbox({ items, index, onClose, onIndex }) {
         unoptimized={items[index].src.endsWith(".svg")}
         onClick={stop}
         className="h-auto max-h-[82svh] w-auto max-w-[92vw] rounded-[10px] object-contain shadow-petal"
-=======
-      <img
-        src={items[index].src}
-        alt={items[index].alt}
-        onClick={stop}
-        className="max-h-[82svh] max-w-[92vw] rounded-[10px] object-contain shadow-petal"
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
       />
       <button type="button" onClick={(e) => { stop(e); onClose(); }} aria-label="Close photo viewer" className={`${ctl} right-4 top-4`}>
         <X className="size-5" aria-hidden="true" />

@@ -2,11 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { CalendarPlus, Download, MapPin, Navigation } from "lucide-react";
-<<<<<<< HEAD
 import Page from "./Page";
-=======
-import SectionFade from "./SectionFade";
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 import { CornerOrnaments } from "./Ornaments";
 import { FloralDivider } from "./FloralDecorations";
 import Timeline from "./Timeline";
@@ -37,11 +33,7 @@ export default function ProgramSection() {
     venue.directionsUrl || `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(venue.mapQuery)}`;
 
   return (
-<<<<<<< HEAD
     <Page id="program" className="px-6 py-28 sm:px-14 lg:px-24">
-=======
-    <SectionFade id="program" className="px-6 py-28 sm:px-14 lg:px-24">
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
       <CornerOrnaments />
       <div className="mx-auto w-full max-w-6xl">
         <header className="mb-14 text-center">
@@ -133,10 +125,6 @@ export default function ProgramSection() {
           )}
         </div>
       </div>
-<<<<<<< HEAD
     </Page>
-=======
-    </SectionFade>
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
   );
 }

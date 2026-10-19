@@ -1,13 +1,7 @@
 "use client";
-<<<<<<< HEAD
 
 import Page from "./Page";
 import Image from "next/image";
-=======
-/* eslint-disable @next/next/no-img-element */
-
-import SectionFade from "./SectionFade";
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
 import { CornerOrnaments, Crest } from "./Ornaments";
 import { weddingData } from "@/config/weddingData";
 import { formatLongDate } from "@/lib/format";
@@ -28,19 +22,11 @@ function Name({ person }) {
   return (
     <div className="text-center">
       {person.nameKm && (
-<<<<<<< HEAD
         <p lang="km" className="whitespace-nowrap font-khmer-display leading-relaxed" style={{ fontSize: "clamp(1.05rem, 5vw, 2.25rem)" }}>
           <span className="gold-text">{person.nameKm}</span>
         </p>
       )}
       <p className={`whitespace-nowrap font-display italic ${person.nameKm ? "mt-2" : ""}`} style={{ fontSize: "clamp(1.2rem, 5.4vw, 2rem)" }}>
-=======
-        <p lang="km" className="font-khmer-display text-2xl leading-relaxed sm:text-4xl">
-          <span className="gold-text">{person.nameKm}</span>
-        </p>
-      )}
-      <p className={`font-display italic ${person.nameKm ? "mt-2 text-lg sm:text-2xl" : "text-3xl"}`}>
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
         <span className="gold-text">{person.name}</span>
       </p>
     </div>
@@ -54,11 +40,7 @@ function Portrait({ person }) {
     <div className="mx-auto mt-5 aspect-square w-[min(36vw,12rem)] rounded-full border-2 border-gold p-1.5 shadow-petal">
       <div className="relative h-full w-full overflow-hidden rounded-full bg-black/20">
         {person.photo ? (
-<<<<<<< HEAD
           <Image src={person.photo} alt={person.name} fill sizes="192px" quality={75} unoptimized={person.photo.endsWith(".svg")} className="object-cover" />
-=======
-          <img src={person.photo} alt={person.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
         ) : (
           <span className="absolute inset-0 grid place-items-center font-display text-5xl italic sm:text-6xl">
             <span className="gold-text">{initial}</span>
@@ -73,27 +55,17 @@ function Portrait({ person }) {
 export default function InfoSection() {
   const { couple, hero, event, venue } = weddingData;
   return (
-<<<<<<< HEAD
     <Page id="info" className="px-6 py-28 sm:px-14">
       <CornerOrnaments />
-      <div className="mx-auto w-full max-w-2xl text-center">
-        <Crest className="mx-auto w-24 sm:w-24">
-          <span className="font-display text-1xl sm:text-1xl">
-=======
-    <SectionFade id="info" className="px-6 py-28 sm:px-14">
-      <CornerOrnaments />
       <div className="mx-auto w-full max-w-3xl text-center">
-        <Crest className="mx-auto w-24 sm:w-32">
-          <span className="font-display italic text-2xl sm:text-3xl">
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
+          <span className="font-display text-2xl sm:text-2xl">
             <span className="gold-text">{hero.monogram}</span>
           </span>
-        </Crest>
         <p lang="km" className="mt-6 font-khmer-display text-2xl leading-relaxed sm:text-4xl">
           <span className="gold-text">{hero.titleKm}</span>
         </p>
 
-        <div className="mt-10 grid grid-cols-2 gap-6">
+        <div className="mt-11 grid grid-cols-2 gap-6">
           <Parents title="Parents of the groom" person={couple.groom} align="left" />
           <Parents title="Parents of the bride" person={couple.bride} align="right" />
         </div>
@@ -136,10 +108,6 @@ export default function InfoSection() {
           <p className="font-display text-lg text-ink/85">{`${venue.name}, ${venue.short}`}</p>
         </div>
       </div>
-<<<<<<< HEAD
     </Page>
-=======
-    </SectionFade>
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
   );
 }

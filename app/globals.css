@@ -45,26 +45,16 @@
 }
 
 @layer base {
-<<<<<<< HEAD
   html,
   body {
     height: 100%;
     overflow: hidden; /* each page scrolls inside itself; the page itself never scrolls */
     overscroll-behavior: none;
-=======
-  html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
     -webkit-text-size-adjust: 100%;
   }
 
   body {
     @apply bg-cream font-body text-ink antialiased;
-<<<<<<< HEAD
-=======
-    overflow-x: clip;
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
   }
 
   ::selection {
@@ -79,7 +69,6 @@
   }
 }
 
-<<<<<<< HEAD
 @keyframes breathe {
   0%,
   100% {
@@ -112,9 +101,6 @@
     animation: rise 1s cubic-bezier(0.22, 1, 0.36, 1) both;
     animation-delay: var(--d, 0s);
   }
-=======
-@layer utilities {
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
   /* Gold gradient text. .gold-text is for dark backgrounds (the cover card);
      .gold-text-ink is for the light page (headings). */
   .gold-text,
@@ -163,14 +149,8 @@
   .gold-text-ink {
     animation: none !important;
   }
-<<<<<<< HEAD
   .rise,
   .breathe {
     animation: none;
-=======
-  html {
-    scroll-behavior: auto;
-    scroll-snap-type: none;
->>>>>>> 628a69eb273ca9052674eb3fa842ee740de8610f
   }
 }
