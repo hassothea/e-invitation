@@ -229,7 +229,7 @@ export const weddingData = {
     heading: "Our moments",
     intro: "A few frames from the road to this day.",
     images: [
-      { src: "/images/gallery-01.jpg", alt: "Photo 1 of the couple" },
+      { src: "/images/gallery-1.jpg", alt: "Photo 1 of the couple" },
       { src: "/images/gallery-02.JPG", alt: "Photo 2 of the couple" },
       { src: "/images/gallery-03.JPG", alt: "Photo 3 of the couple" },
       { src: "/images/gallery-04.JPG", alt: "Photo 4 of the couple" },
