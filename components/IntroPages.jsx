@@ -27,7 +27,7 @@ export function CoverPage({ guestName, onOpen }) {
             style={{
               width: "min(92vw, 64svh)",
               height: "min(92vw, 64svh)",
-              background: "radial-gradient(closest-side, rgb(var(--c-gold) / 0.01), rgb(var(--c-blush) / 0.11) 60%, transparent 58%)",
+              background: "radial-gradient(closest-side, rgb(var(--c-gold) / 0.05), rgb(var(--c-blush) / 0.15) 50%, transparent 20%)",
             }}
           />
         )}
