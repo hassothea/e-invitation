@@ -58,9 +58,9 @@ export default function InfoSection() {
     <Page id="info" className="px-6 py-28 sm:px-14">
       <CornerOrnaments />
       <div className="mx-auto w-full max-w-3xl text-center">
-          <span className="font-display text-2xl sm:text-2xl">
+          {/* <span className="font-display text-2xl sm:text-2xl">
             <span className="gold-text">{hero.monogram}</span>
-          </span>
+          </span> */}
         <p lang="km" className="mt-6 font-khmer-display text-2xl leading-relaxed sm:text-4xl">
           <span className="gold-text">{hero.titleKm}</span>
         </p>

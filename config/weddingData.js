@@ -91,8 +91,8 @@ export const weddingData = {
     // How the pages change. ONE scroll, swipe or key press moves to the next page:
     // the old page fades out slowly, then the new page fades in.
     pageFade: {
-      outSeconds: 1.6, // the old page fading out
-      inSeconds: 1.8, // the new page fading in
+      outSeconds: 0.7, // the old page fading out
+      inSeconds: 1, // the new page fading in
     },
 
     // Auto-play: the invitation turns its own pages, starting a few seconds after it loads.
@@ -101,8 +101,8 @@ export const weddingData = {
     autoScroll: {
       enabled: true,
       startDelayMs: 3000, // wait this long after the page loads
-      pageSeconds: 6, // how long each page stays before fading to the next
-      speed: 120, // pixels per second for long pages: 60 = slow, 120 = brisk, 200 = fast
+      pageSeconds: 2.5, // how long each page stays before fading to the next
+      speed: 125, // pixels per second for long pages: 60 = slow, 120 = brisk, 200 = fast
     },
 
     // Random twinkling sparkles in the background.
@@ -148,7 +148,7 @@ export const weddingData = {
      The cover fades out, "The wedding of" fades in, then fades out into the invitation page. */
   hero: {
     titleKm: "សិរីមង្គលអាពាហ៍ពិពាហ៍", // heading on the cover and the invitation page
-    monogram: "សុធា & ផានិច", // inside the crest on the cover
+    monogram: "ធ & ន", // inside the crest on the cover
     weddingOf: "The wedding of", // the line above the names on page 2
     weddingOfKm: "", // optional: the same in Khmer
     inviteKm: "សូមគោរពអញ្ជើញ", // line above the guest's name
