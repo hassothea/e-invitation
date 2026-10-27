@@ -76,6 +76,12 @@ export const weddingData = {
     },
   },
 
+  // Couple initials //
+  couple_init:{
+    src: "/images/couple_initials.png",
+    alt: "Couple Initials"
+  },
+
   /* ---------- Personalized greeting ----------
      Link:  https://your-site.vercel.app/?to=John+%26+Mary
      Shows: "Dear John & Mary"

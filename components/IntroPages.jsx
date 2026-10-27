@@ -8,7 +8,7 @@ const rise = (d) => ({ "--d": `${d}s` }); // CSS-only fade-up delay (works befor
 
 /* Page 1: the full-screen cover. Sizes use clamp() with vw/svh so it fills any phone or computer. */
 export function CoverPage({ guestName, onOpen }) {
-  const { couple, guest, hero } = weddingData;
+  const { couple, couple_init, guest, hero } = weddingData;
   const a = couple.groom.cover ?? couple.groom.name;
   const b = couple.bride.cover ?? couple.bride.name;
   const glow = weddingData.motion?.romance?.glow !== false;
@@ -27,13 +27,23 @@ export function CoverPage({ guestName, onOpen }) {
             style={{
               width: "min(92vw, 64svh)",
               height: "min(92vw, 64svh)",
-              background: "radial-gradient(closest-side, rgb(var(--c-gold) / 0.05), rgb(var(--c-blush) / 0.15) 50%, transparent 20%)",
+              background: "radial-gradient(closest-side, rgb(var(--c-gold) / 0.05), rgb(var(--c-blush) / 0.07) 50%, transparent 10%)",
             }}
           />
         )}
 
-        <p className="relative font-wedding" style={{ fontSize: "clamp(1.8rem, min(7vw, 5.5svh), 5rem)", marginTop: "2.5svh" }}>
-          <span className="gold-text">{`${a} & ${b}`}</span>
+        <p className="relative font-wedding" style={{ fontSize: "clamp(1.8rem, min(5vw, 5.5svh), 5rem)", marginTop: "1svh" }}>
+          {/* <span className="gold-text">{`${a} & ${b}`}</span> */}
+          <img
+            src={couple_init.src}
+            alt={couple_init.alt}
+            style={{
+              width: "180px",
+              height: "auto",
+              maxWidth: "100%",
+              objectFit: "contain"
+            }}
+          />
         </p>
       </div>
 
