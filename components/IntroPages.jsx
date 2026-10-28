@@ -27,7 +27,7 @@ export function CoverPage({ guestName, onOpen }) {
             style={{
               width: "min(92vw, 64svh)",
               height: "min(92vw, 64svh)",
-              background: "radial-gradient(closest-side, rgb(var(--c-gold) / 0.05), rgb(var(--c-blush) / 0.07) 50%, transparent 10%)",
+              background: "radial-gradient(closest-side, rgb(var(--c-gold) / 0.05), rgb(var(--c-blush) / 0.07) 40%, transparent 10%)",
             }}
           />
         )}
@@ -38,7 +38,8 @@ export function CoverPage({ guestName, onOpen }) {
             src={couple_init.src}
             alt={couple_init.alt}
             style={{
-              width: "180px",
+              alignContent: "center",
+              width: "100px",
               height: "auto",
               maxWidth: "100%",
               objectFit: "contain"
