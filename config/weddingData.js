@@ -289,9 +289,9 @@ export const weddingData = {
     // What Google Maps should search for. Check that it lands on the right pin.
     mapQuery: "Sereimongkol Restaurant, Bavel, Battambang, Cambodia",
     // Optional: paste a full Google Maps "Embed a map" URL to override the above.
-    mapEmbedUrl: "",
+    mapEmbedUrl: "https://maps.app.goo.gl/6YNiwBuUqKRpZh3T7",
     // Optional: override the "Get directions" link.
-    directionsUrl: "",
+    directionsUrl: "https://maps.app.goo.gl/6YNiwBuUqKRpZh3T7",
   },
 
   /* ---------- RSVP ----------

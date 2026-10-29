@@ -40,7 +40,7 @@ export default function ProgramSection() {
           {program.headingKm && (
             <p lang="km" className="font-khmer-display text-3xl leading-relaxed sm:text-4xl"><span className="gold-text">{program.headingKm}</span></p>
           )}
-          <h2 className="font-display text-4xl font-light sm:text-5xl"><span className="gold-text">{program.heading}</span></h2>
+          <h2 className="font-display text-4xl font-light sm:text-4xl"><span className="gold-text">{program.heading}</span></h2>
           <FloralDivider className="mx-auto mt-3 w-60" />
         </header>
 
@@ -51,9 +51,9 @@ export default function ProgramSection() {
                 {program.days.map((day, i) => (
                   <div key={day.title} className={!twoCol && i ? "mt-14" : ""}>
                     {day.titleKm && (
-                      <p lang="km" className="text-center font-khmer-display text-2xl leading-relaxed sm:text-3xl"><span className="gold-text">{day.titleKm}</span></p>
+                      <p lang="km" className="text-center font-khmer-display text-2xl leading-relaxed sm:text-2xl"><span className="gold-text">{day.titleKm}</span></p>
                     )}
-                    <h3 className="mb-8 text-center font-display text-2xl sm:text-3xl"><span className="gold-text">{day.title}</span></h3>
+                    <h3 className="mb-8 text-center font-display text-2xl sm:text-2xl"><span className="gold-text">{day.title}</span></h3>
                     <Timeline items={day.items} />
                   </div>
                 ))}
