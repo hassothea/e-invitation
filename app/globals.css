@@ -46,6 +46,24 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Khmer OS System";
+  src: local("Khmer OS System"),
+       local("KhmerOSSystem"),
+       url("/fonts/Khmer-OS-System/KhmerOS.ttf") format("truetype");
+  unicode-range: U+1780-17FF, U+19E0-19FF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Khmer OS Freehand";
+  src: local("Khmer OS Freehand"),
+    local("KhmerOSFreehand"),
+    url("/fonts/Khmer-OS-System/KhmerOS_freehand.ttf") format("truetype");
+  unicode-range: U+1780-17FF, U+19E0-19FF;
+  font-display: swap;
+}
+
 @layer base {
   html,
   body {

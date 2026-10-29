@@ -45,7 +45,7 @@ export const weddingData = {
     khmerBody: { family: "Battambang", google: true },
     // The long Khmer descriptions (invitation paragraph, program lines). "Khmer Borann" is not on
     // Google Fonts: see the README to add it. Moulpali is the closest free match.
-    khmerDescription: { family: "Moulpali", google: true },
+    khmerDescription: { family: "Battambang", google: true },
   },
 
   /* ---------- The couple ---------- */

@@ -101,7 +101,7 @@ export function WeddingOfPage() {
           <p
             lang={person.nameKm ? "km" : undefined}
             className={person.nameKm ? "font-khmer-display" : "font-display font-light"}
-            style={{ ...one, fontSize: "clamp(1.8rem, min(9.5vw, 10svh), 4.6rem)", lineHeight: 1.5 }}
+            style={{ ...one, fontSize: "clamp(1.8rem, min(9.5vw, 5svh), 4.6rem)", lineHeight: 1.5 }}
           >
             <span className="gold-text">{person.nameKm || person.name}</span>
           </p>

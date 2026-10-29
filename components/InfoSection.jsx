@@ -75,11 +75,17 @@ export default function InfoSection() {
         </p>
         <p className="font-display italic text-ink/80">{hero.invite}</p>
 
-        {hero.invitationTextKm && (
+        {/* {hero.invitationTextKm && (
           <p lang="km" className="mx-auto mt-5 max-w-2xl font-khmer-desc text-base leading-[2.1] text-ink sm:text-lg">
             {hero.invitationTextKm}
           </p>
-        )}
+        )} */}
+        
+        {hero.invitationTextKm && (
+        <p lang="km" className="mx-auto mt-5 max-w-2xl text-base leading-[2.1] text-ink sm:text-lg">
+            {hero.invitationTextKm}
+          </p>
+      )}
         <p className="mx-auto mt-3 max-w-xl font-display text-lg italic text-ink/80">{hero.invitationText}</p>
 
         {/* groom on the left, bride on the right */}
