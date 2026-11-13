@@ -16,7 +16,7 @@ const outline = `${btn} border border-gold/60 text-gold-light hover:bg-gold/10`;
 
 /** Two-day program + location. Side by side on computers; program first, then map, on phones. */
 export default function ProgramSection() {
-  const { program, event, venue } = weddingData;
+  const { program, event, venue , abaqr} = weddingData;
   const where = [venue.name, ...venue.addressLines].join(", ");
   const calendarEvent = {
     title: event.calendarTitle,
@@ -26,6 +26,8 @@ export default function ProgramSection() {
     end: event.end,
     timezone: event.timezone,
   };
+  const ABAkh = abaqr.kh;
+  const ABAdollar = abaqr.dollar;
   const mapSrc = venue.mapEmbedUrl || `https://www.google.com/maps?q=${encodeURIComponent(venue.mapQuery)}&output=embed`;
   const twoCol = (program.columns ?? 1) === 2;
   const side = show.schedule && show.map && !twoCol; // program and map side by side
@@ -120,6 +122,27 @@ export default function ProgramSection() {
                     </li>
                   ))}
                 </ul>
+              )}
+              <header className="mt-10 mb-4 text-center">
+                <h3 className="font-display text-4xl"><span className="gold-text">{abaqr.header}</span></h3>
+                <p lang="km" className="mt-1 font-khmer-display text-lg leading-relaxed"><span className="gold-text">{abaqr.headerKh}</span></p>
+              </header>
+              {abaqr.display === "qr" ? (
+                <div className="mt-6">
+                  <div className="mx-auto max-w-[16rem] rounded-[10px] bg-white p-3 shadow-petal ring-2 ring-gold">
+                    <img src={abaqr.qrImage} alt={`ABA QR code for our wedding gift.`} className="aspect-[3/4] w-full object-contain" />
+                  </div>
+                  {(venue.qrCaption || venue.qrCaptionKm) && (
+                    <p className="mt-3 text-center text-sm text-ink/75">
+                      {abaqr.qrCaption}
+                      {abaqr.qrCaptionKm && <span lang="km" className="block font-khmer-desc">{venue.qrCaptionKm}</span>}
+                    </p>
+                  )}
+                </div>
+              ) : (
+                <div className="mt-6 aspect-[4/3] overflow-hidden rounded-[10px] bg-black/20 shadow-petal ring-2 ring-gold/70">
+                  <iframe title={`Map showing ${venue.name}`} src={mapSrc} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen className="h-full w-full border-0" />
+                </div>
               )}
             </div>
           )}

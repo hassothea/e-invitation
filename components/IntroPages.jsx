@@ -27,19 +27,19 @@ export function CoverPage({ guestName, onOpen }) {
             style={{
               width: "min(92vw, 64svh)",
               height: "min(92vw, 64svh)",
-              background: "radial-gradient(closest-side, rgb(var(--c-gold) / 0.05), rgb(var(--c-blush) / 0.07) 40%, transparent 10%)",
+              background: "radial-gradient(closest-side, rgb(var(--c-gold) / 0.05), rgb(var(--c-blush) / 0.07) 30%, transparent 10%)",
             }}
           />
         )}
 
-        <p className="relative font-wedding" style={{ fontSize: "clamp(1.8rem, min(5vw, 5.5svh), 5rem)", marginTop: "1svh" }}>
+        <p className="relative font-wedding" style={{ fontSize: "clamp(1.8rem, min(5vw, 5.5svh), 5rem)", marginTop: "0.5svh" }}>
           {/* <span className="gold-text">{`${a} & ${b}`}</span> */}
           <img
             src={couple_init.src}
             alt={couple_init.alt}
             style={{
               alignContent: "center",
-              width: "100px",
+              width: "70px",
               height: "auto",
               maxWidth: "100%",
               objectFit: "contain"

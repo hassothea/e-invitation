@@ -165,7 +165,7 @@ export const weddingData = {
     openHint: "Tap to open the invitation",
     // The invitation paragraph (invitation page). Shown in the "description" Khmer font.
     invitationTextKm:
-      "ឯកឧត្តម លោកជំទាវ លោកអ្នកឧកញ៉ា អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីសិរីមង្គលអាពាហ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំ។",
+      "ឯកឧត្តម លោកជំទាវ លោកអ្នកឧកញ៉ា អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀ វកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីសិរីមង្គលអាពាហ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំ។",
     invitationText:
       "Together with our families, invite you to celebrate our wedding...",
     heldAtKm: "ដែលនឹងប្រព្រឹត្តទៅនៅ",
@@ -202,26 +202,26 @@ export const weddingData = {
         title: "Day 1: Friday, 18 December 2026",
         titleKm: "កម្មវិធីថ្ងៃទី១: ថ្ងៃសុក្រ ទី១៨ ខែធ្នូ ឆ្នាំ២០២៦",
         items: [
-          { time: "1:30 PM", timeKm: "ម៉ោង ០១:៣០ រសៀល", title: "Gathering of honored guests", titleKm: "ជួបជុំភ្ញៀវកិត្តិយស", icon: "door" },
+          { time: "1:30 PM", timeKm: "ម៉ោង ០១:៣០ រសៀល", title: "Gathering of honored guests", titleKm: "ជួបជុំភ្ញៀ វកិត្តិយស", icon: "star" },
           { time: "2:00 PM", timeKm: "ម៉ោង ០២:០០ រសៀល", title: "Sen Krong Peali ceremony", titleKm: "ពិធីសែនក្រុងពាលី", icon: "sparkles" },
-          { time: "3:30 PM", timeKm: "ម៉ោង ០៣:៣០ រសៀល", title: "Monks' blessing chant", titleKm: "ពិធីសូត្រមន្តចំរើនព្រះបរិត្ត", icon: "flower" },
-          { time: "5:00 PM", timeKm: "ម៉ោង ០៥:០០ ល្ងាច", title: "Khan Sla offering and ring ceremony", titleKm: "ពិធីជាវខាន់ស្លា និងបំពាក់ចិញ្ចៀន", icon: "gift" },
-          { time: "5:30 PM", timeKm: "ម៉ោង ០៥:៣០ ល្ងាច", title: "Dinner for honored guests", titleKm: "អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារ ពេលល្ងាច", icon: "utensils" },
+          { time: "3:30 PM", timeKm: "ម៉ោង ០៣:៣០ រសៀល", title: "Monks' blessing chant", titleKm: "ពិធីសូត្រមន្តចំរើនព្រះបរិត្ត", icon: "star" },
+          { time: "5:00 PM", timeKm: "ម៉ោង ០៥:០០ ល្ងាច", title: "Khan Sla offering and ring ceremony", titleKm: "ពិធីជាវខាន់ស្លា និងបំពាក់ចិញ្ចៀន", icon: "star" },
+          { time: "5:30 PM", timeKm: "ម៉ោង ០៥:៣០ ល្ងាច", title: "Dinner for honored guests", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាអាហារ ពេលល្ងាច", icon: "star" },
         ],
       },
       {
         title: "Day 2: Saturday, 19 December 2026",
         titleKm: "កម្មវិធីថ្ងៃទី២: ថ្ងៃសៅរ៍ ទី១៩ ខែធ្នូ ឆ្នាំ២០២៦",
         items: [
-          { time: "5:30 AM", timeKm: "ម៉ោង ០៥:៣០ ព្រឹក", title: "Morning homage ceremony", titleKm: "ពិធីសំពះពេលា", icon: "hand" },
-          { time: "7:00 AM", timeKm: "ម៉ោង ០៧:០០ ព្រឹក", title: "Gathering of honored guests; preparing the gift procession", titleKm: "ជួបជុំភ្ញៀវកិត្តិយស រៀបចំហែជំនូន", icon: "door" },
-          { time: "7:10 AM", timeKm: "ម៉ោង ០៧:១០ ព្រឹក", title: "Gift procession into the wedding pavilion", titleKm: "ពិធីហែជំនូន (កំណត់) ចូលរោងជ័យ", icon: "gift" },
-          { time: "7:30 AM", timeKm: "ម៉ោង ០៧:៣០ ព្រឹក", title: "Breakfast for honored guests", titleKm: "អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារ ពេលព្រឹក", icon: "utensils" },
-          { time: "8:00 AM", timeKm: "ម៉ោង ០៨:០០ ព្រឹក", title: "Marriage proposal ceremony and betel ritual (arranging the fruit)", titleKm: "ពិធីជំនុំជើងការ និងពិសាស្លាកំណត់ (រៀបរាប់ផ្លែឈើ)", icon: "users" },
-          { time: "9:30 AM", timeKm: "ម៉ោង ០៩:៣០ ព្រឹក", title: "Hair-cutting ceremony and family photos (15 to 20 minutes)", titleKm: "ពិធីកាត់សក់បង្កក់សិរី កម្មវិធីថតរូបជុំគ្រួសារ (១៥-២០នាទី)", icon: "scissors" },
-          { time: "11:00 AM", timeKm: "ម៉ោង ១១:០០ ព្រឹក", title: "Candle-circling, nuptial bowing and wrist-tying ceremony", titleKm: "ពិធីបង្វិលពពិល និងសំពះផ្ទឹមសែនចងដៃ", icon: "flame" },
-          { time: "11:30 AM", timeKm: "ម៉ោង ១១:៣០ ថ្ងៃត្រង់", title: "Lunch for honored guests", titleKm: "អញ្ជើញភ្ញៀវកិត្តិយសពិសាភោជនាហារ ថ្ងៃត្រង់", icon: "utensils" },
-          { time: "5:00 PM", timeKm: "ម៉ោង ០៥:០០ ល្ងាច", title: "Evening dinner reception", titleKm: "អញ្ជើញភ្ញៀវកិត្តិយសពិសាភោជនាហារ ពេលល្ងាច", icon: "wine" },
+          { time: "5:30 AM", timeKm: "ម៉ោង ០៥:៣០ ព្រឹក", title: "Morning homage ceremony", titleKm: "ពិធីសំពះពេលា", icon: "star" },
+          { time: "7:00 AM", timeKm: "ម៉ោង ០៧:០០ ព្រឹក", title: "Gathering of honored guests; preparing the gift procession", titleKm: "ជួបជុំភ្ញៀ វកិត្តិយស រៀបចំហែជំនូន", icon: "star" },
+          { time: "7:10 AM", timeKm: "ម៉ោង ០៧:១០ ព្រឹក", title: "Gift procession into the wedding pavilion", titleKm: "ពិធីហែជំនូន (កំណត់) ចូលរោងជ័យ", icon: "star" },
+          { time: "7:30 AM", timeKm: "ម៉ោង ០៧:៣០ ព្រឹក", title: "Breakfast for honored guests", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាអាហារ ពេលព្រឹក", icon: "star" },
+          { time: "8:00 AM", timeKm: "ម៉ោង ០៨:០០ ព្រឹក", title: "Marriage proposal ceremony and betel ritual (arranging the fruit)", titleKm: "ពិធីជំនុំជើងការ និងពិសាស្លាកំណត់ (រៀបរាប់ផ្លែឈើ)", icon: "star" },
+          { time: "9:30 AM", timeKm: "ម៉ោង ០៩:៣០ ព្រឹក", title: "Hair-cutting ceremony and family photos (15 to 20 minutes)", titleKm: "ពិធីកាត់សក់បង្កក់សិរី កម្មវិធីថតរូបជុំគ្រួសារ (១៥-២០នាទី)", icon: "star" },
+          { time: "11:00 AM", timeKm: "ម៉ោង ១១:០០ ព្រឹក", title: "Candle-circling, nuptial bowing and wrist-tying ceremony", titleKm: "ពិធីបង្វិលពពិល និងសំពះផ្ទឹមសែនចងដៃ", icon: "star" },
+          { time: "11:30 AM", timeKm: "ម៉ោង ១១:៣០ ថ្ងៃត្រង់", title: "Lunch for honored guests", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាភោជនាហារ ថ្ងៃត្រង់", icon: "star" },
+          { time: "5:00 PM", timeKm: "ម៉ោង ០៥:០០ ល្ងាច", title: "Evening dinner reception", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាភោជនាហារ ពេលល្ងាច", icon: "star" },
         ],
       },
     ],
@@ -292,6 +292,16 @@ export const weddingData = {
     mapEmbedUrl: "https://maps.app.goo.gl/6YNiwBuUqKRpZh3T7",
     // Optional: override the "Get directions" link.
     directionsUrl: "https://maps.app.goo.gl/6YNiwBuUqKRpZh3T7",
+  },
+
+  //----- ABA QR -------//
+
+  abaqr : {
+    display : 'qr',
+    headerKh : "ចំណងដៃអាពាហ៍ពិពាហ៍",
+    header : "Wedding Gift",
+    qrImage : "/images/ABA.jpg",
+    qrCaption : "..."
   },
 
   /* ---------- RSVP ----------
