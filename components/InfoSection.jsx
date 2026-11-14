@@ -66,8 +66,8 @@ export default function InfoSection() {
         </p>
 
         <div className="mt-11 grid grid-cols-2 gap-6">
-          <Parents title="មាតិបិតាកូនកំលោះ" person={couple.groom} align="left" />
-          <Parents title="មាតាបិតាកូនក្រមុំ" person={couple.bride} align="right" />
+          <Parents title="" person={couple.groom} align="left" />
+          <Parents title="" person={couple.bride} align="right" />
         </div>
 
         <p lang="km" className="mt-12 font-khmer-display text-xl leading-relaxed sm:text-2xl">

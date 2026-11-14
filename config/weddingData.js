@@ -70,7 +70,7 @@ export const weddingData = {
       parents: "Daughter of Mr. MAO Phai and Mrs. PHORN Sophea",
       father: "លោក ម៉ៅ ផៃ",
       fatherKm: "",
-      mother: "លោកស្រី ផន សុភា",
+      mother: "លោកស្រី ភ័ណ សុភា",
       motherKm: "",
       photo: "/images/bride.jpg", // round photo, e.g. "/images/bride.jpg" (leave empty to show the initial)
     },
@@ -233,7 +233,7 @@ export const weddingData = {
      Photos display in a 4:5 portrait frame with slightly rounded corners.  */
   gallery: {
     heading: "Our moments",
-    intro: "A few frames from the road to this day.",
+    intro: "A few frames of our moments.",
     images: [
       { src: "/images/gallery-1.jpg", alt: "Photo 1 of the couple" },
       { src: "/images/gallery-02.JPG", alt: "Photo 2 of the couple" },
