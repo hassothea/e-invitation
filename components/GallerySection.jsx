@@ -9,7 +9,7 @@ import { show } from "@/lib/sections";
 
 /** The last page: all the photos, then a thank-you. */
 export default function GallerySection() {
-  const { gallery, video, closing, couple, meta } = weddingData;
+  const { gallery, video, closing, couple, meta, abaqr } = weddingData;
 
   return (
     <Page id="gallery" className="overflow-hidden px-5 pb-16 pt-24 sm:px-14 lg:px-24">
@@ -33,8 +33,25 @@ export default function GallerySection() {
         )}
 
         {/* ---------- Farewell ---------- */}
+
+        <header className="mt-14 mb-4 text-center">
+                <h3 className="font-display text-4xl"><span className="gold-text">{abaqr.header}</span></h3>
+                <p lang="km" className="mt-1 font-khmer-display text-lg leading-relaxed"><span className="gold-text">{abaqr.headerKh}</span></p>
+              </header>
+              {abaqr.display === "qr" ? (
+                <div className="mt-6">
+                  <div className="mx-auto max-w-[16rem] rounded-[10px] bg-white p-3 shadow-petal ring-2 ring-gold">
+                    <img src={abaqr.qrImage} alt={`ABA QR code for our wedding gift.`} className="aspect-[3/4] w-full object-contain" />
+                  </div>
+                </div>
+              ) : (
+                <div className="mt-6 aspect-[4/3] overflow-hidden rounded-[10px] bg-black/20 shadow-petal ring-2 ring-gold/70">
+                  <iframe title={`Map showing ${abaqr.name}`} src={mapSrc} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen className="h-full w-full border-0" />
+                </div>
+              )}
+
         {show.closing && (
-        <div className="relative mt-28 pb-44 text-center sm:pb-52">
+        <div className="relative mt-6 pb-44 text-center sm:pb-52">
           <h2 className="mx-auto max-w-xl text-balance font-display text-4xl font-light sm:text-5xl"><span className="gold-text">
             {closing.heading}
           </span></h2>
@@ -70,6 +87,7 @@ export default function GallerySection() {
         </div>
         )}
       </div>
+      
     </Page>
   );
 }

@@ -56,9 +56,9 @@ export const weddingData = {
       nameKm: "ហាស់ សុធា", // the name in Khmer script (optional)
       fullName: "HAS Sothea",
       parents: "Son of Mr. HAS Sothy and Mrs. YUON Chanty",
-      father: "Mr. HAS Sothy", // shown on the invitation page
+      father: "លោក ហាស់ សុធី", // shown on the invitation page
       fatherKm: "", // optional: in Khmer
-      mother: "Mrs. YUON Chanty",
+      mother: "លោកស្រី យន់ ចន្ទី",
       motherKm: "",
       photo: "/images/groom.jpg", // round photo, e.g. "/images/groom.jpg" (leave empty to show the initial)
     },
@@ -68,9 +68,9 @@ export const weddingData = {
       nameKm: "ផៃ ផានិច", // the name in Khmer script (optional)
       fullName: "PHAI Phanich",
       parents: "Daughter of Mr. MAO Phai and Mrs. PHORN Sophea",
-      father: "Mr. MAO Phai",
+      father: "លោក ម៉ៅ ផៃ",
       fatherKm: "",
-      mother: "Mrs. PHORN Sophea",
+      mother: "លោកស្រី ផន សុភា",
       motherKm: "",
       photo: "/images/bride.jpg", // round photo, e.g. "/images/bride.jpg" (leave empty to show the initial)
     },
@@ -105,7 +105,7 @@ export const weddingData = {
     // A page that fits the screen stays for `pageSeconds`; a long page is first scrolled slowly
     // (`speed`) to its end. Any click, tap, scroll or key press stops it for good.
     autoScroll: {
-      enabled: true,
+      enabled: false,
       startDelayMs: 3000, // wait this long after the page loads
       pageSeconds: 2.5, // how long each page stays before fading to the next
       speed: 125, // pixels per second for long pages: 60 = slow, 120 = brisk, 200 = fast
@@ -202,26 +202,26 @@ export const weddingData = {
         title: "Day 1: Friday, 18 December 2026",
         titleKm: "កម្មវិធីថ្ងៃទី១: ថ្ងៃសុក្រ ទី១៨ ខែធ្នូ ឆ្នាំ២០២៦",
         items: [
-          { time: "1:30 PM", timeKm: "ម៉ោង ០១:៣០ រសៀល", title: "Gathering of honored guests", titleKm: "ជួបជុំភ្ញៀ វកិត្តិយស", icon: "star" },
-          { time: "2:00 PM", timeKm: "ម៉ោង ០២:០០ រសៀល", title: "Sen Krong Peali ceremony", titleKm: "ពិធីសែនក្រុងពាលី", icon: "sparkles" },
-          { time: "3:30 PM", timeKm: "ម៉ោង ០៣:៣០ រសៀល", title: "Monks' blessing chant", titleKm: "ពិធីសូត្រមន្តចំរើនព្រះបរិត្ត", icon: "star" },
-          { time: "5:00 PM", timeKm: "ម៉ោង ០៥:០០ ល្ងាច", title: "Khan Sla offering and ring ceremony", titleKm: "ពិធីជាវខាន់ស្លា និងបំពាក់ចិញ្ចៀន", icon: "star" },
-          { time: "5:30 PM", timeKm: "ម៉ោង ០៥:៣០ ល្ងាច", title: "Dinner for honored guests", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាអាហារ ពេលល្ងាច", icon: "star" },
+          { time: "1:30 PM", timeKm: "ម៉ោង ០១:៣០ រសៀល", title: "", titleKm: "ជួបជុំភ្ញៀ វកិត្តិយស", icon: "star" },
+          { time: "2:00 PM", timeKm: "ម៉ោង ០២:០០ រសៀល", title: "", titleKm: "ពិធីសែនក្រុងពាលី", icon: "sparkles" },
+          { time: "3:30 PM", timeKm: "ម៉ោង ០៣:៣០ រសៀល", title: "", titleKm: "ពិធីសូត្រមន្តចំរើនព្រះបរិត្ត", icon: "star" },
+          { time: "5:00 PM", timeKm: "ម៉ោង ០៥:០០ ល្ងាច", title: "", titleKm: "ពិធីជាវខាន់ស្លា និងបំពាក់ចិញ្ចៀន", icon: "star" },
+          { time: "5:30 PM", timeKm: "ម៉ោង ០៥:៣០ ល្ងាច", title: "", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាអាហារ ពេលល្ងាច", icon: "star" },
         ],
       },
       {
         title: "Day 2: Saturday, 19 December 2026",
         titleKm: "កម្មវិធីថ្ងៃទី២: ថ្ងៃសៅរ៍ ទី១៩ ខែធ្នូ ឆ្នាំ២០២៦",
         items: [
-          { time: "5:30 AM", timeKm: "ម៉ោង ០៥:៣០ ព្រឹក", title: "Morning homage ceremony", titleKm: "ពិធីសំពះពេលា", icon: "star" },
-          { time: "7:00 AM", timeKm: "ម៉ោង ០៧:០០ ព្រឹក", title: "Gathering of honored guests; preparing the gift procession", titleKm: "ជួបជុំភ្ញៀ វកិត្តិយស រៀបចំហែជំនូន", icon: "star" },
-          { time: "7:10 AM", timeKm: "ម៉ោង ០៧:១០ ព្រឹក", title: "Gift procession into the wedding pavilion", titleKm: "ពិធីហែជំនូន (កំណត់) ចូលរោងជ័យ", icon: "star" },
-          { time: "7:30 AM", timeKm: "ម៉ោង ០៧:៣០ ព្រឹក", title: "Breakfast for honored guests", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាអាហារ ពេលព្រឹក", icon: "star" },
-          { time: "8:00 AM", timeKm: "ម៉ោង ០៨:០០ ព្រឹក", title: "Marriage proposal ceremony and betel ritual (arranging the fruit)", titleKm: "ពិធីជំនុំជើងការ និងពិសាស្លាកំណត់ (រៀបរាប់ផ្លែឈើ)", icon: "star" },
-          { time: "9:30 AM", timeKm: "ម៉ោង ០៩:៣០ ព្រឹក", title: "Hair-cutting ceremony and family photos (15 to 20 minutes)", titleKm: "ពិធីកាត់សក់បង្កក់សិរី កម្មវិធីថតរូបជុំគ្រួសារ (១៥-២០នាទី)", icon: "star" },
-          { time: "11:00 AM", timeKm: "ម៉ោង ១១:០០ ព្រឹក", title: "Candle-circling, nuptial bowing and wrist-tying ceremony", titleKm: "ពិធីបង្វិលពពិល និងសំពះផ្ទឹមសែនចងដៃ", icon: "star" },
-          { time: "11:30 AM", timeKm: "ម៉ោង ១១:៣០ ថ្ងៃត្រង់", title: "Lunch for honored guests", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាភោជនាហារ ថ្ងៃត្រង់", icon: "star" },
-          { time: "5:00 PM", timeKm: "ម៉ោង ០៥:០០ ល្ងាច", title: "Evening dinner reception", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាភោជនាហារ ពេលល្ងាច", icon: "star" },
+          { time: "5:30 AM", timeKm: "ម៉ោង ០៥:៣០ ព្រឹក", title: "", titleKm: "ពិធីសំពះពេលា", icon: "star" },
+          { time: "7:00 AM", timeKm: "ម៉ោង ០៧:០០ ព្រឹក", title: "", titleKm: "ជួបជុំភ្ញៀ វកិត្តិយស រៀបចំហែជំនូន", icon: "star" },
+          { time: "7:10 AM", timeKm: "ម៉ោង ០៧:១០ ព្រឹក", title: "", titleKm: "ពិធីហែជំនូន (កំណត់) ចូលរោងជ័យ", icon: "star" },
+          { time: "7:30 AM", timeKm: "ម៉ោង ០៧:៣០ ព្រឹក", title: "", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាអាហារ ពេលព្រឹក", icon: "star" },
+          { time: "8:00 AM", timeKm: "ម៉ោង ០៨:០០ ព្រឹក", title: "", titleKm: "ពិធីជំនុំជើងការ និងពិសាស្លាកំណត់ (រៀបរាប់ផ្លែឈើ)", icon: "star" },
+          { time: "9:30 AM", timeKm: "ម៉ោង ០៩:៣០ ព្រឹក", title: "", titleKm: "ពិធីកាត់សក់បង្កក់សិរី កម្មវិធីថតរូបជុំគ្រួសារ (១៥-២០នាទី)", icon: "star" },
+          { time: "11:00 AM", timeKm: "ម៉ោង ១១:០០ ព្រឹក", title: "", titleKm: "ពិធីបង្វិលពពិល និងសំពះផ្ទឹមសែនចងដៃ", icon: "star" },
+          { time: "11:30 AM", timeKm: "ម៉ោង ១១:៣០ ថ្ងៃត្រង់", title: "", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាភោជនាហារ ថ្ងៃត្រង់", icon: "star" },
+          { time: "5:00 PM", timeKm: "ម៉ោង ០៥:០០ ល្ងាច", title: "", titleKm: "អញ្ជើញភ្ញៀ វកិត្តិយសពិសាភោជនាហារ ពេលល្ងាច", icon: "star" },
         ],
       },
     ],

@@ -123,27 +123,6 @@ export default function ProgramSection() {
                   ))}
                 </ul>
               )}
-              <header className="mt-10 mb-4 text-center">
-                <h3 className="font-display text-4xl"><span className="gold-text">{abaqr.header}</span></h3>
-                <p lang="km" className="mt-1 font-khmer-display text-lg leading-relaxed"><span className="gold-text">{abaqr.headerKh}</span></p>
-              </header>
-              {abaqr.display === "qr" ? (
-                <div className="mt-6">
-                  <div className="mx-auto max-w-[16rem] rounded-[10px] bg-white p-3 shadow-petal ring-2 ring-gold">
-                    <img src={abaqr.qrImage} alt={`ABA QR code for our wedding gift.`} className="aspect-[3/4] w-full object-contain" />
-                  </div>
-                  {(venue.qrCaption || venue.qrCaptionKm) && (
-                    <p className="mt-3 text-center text-sm text-ink/75">
-                      {abaqr.qrCaption}
-                      {abaqr.qrCaptionKm && <span lang="km" className="block font-khmer-desc">{venue.qrCaptionKm}</span>}
-                    </p>
-                  )}
-                </div>
-              ) : (
-                <div className="mt-6 aspect-[4/3] overflow-hidden rounded-[10px] bg-black/20 shadow-petal ring-2 ring-gold/70">
-                  <iframe title={`Map showing ${venue.name}`} src={mapSrc} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen className="h-full w-full border-0" />
-                </div>
-              )}
             </div>
           )}
         </div>

@@ -9,10 +9,10 @@ import { formatLongDate } from "@/lib/format";
 function Parents({ title, person, align }) {
   return (
     <div className={align === "right" ? "text-right" : "text-left"}>
-      <p className="text-xs text-ink/65">{title}</p>
-      <p className="mt-1 font-display text-xl text-gold-light">{person.father}</p>
+      <p className="text-2xs text-ink/75">{title}</p>
+      <p className="mt-3 font-display text-0.5xl text-gold-light">{person.father}</p>
       {person.fatherKm && <p lang="km" className="font-khmer-desc text-ink/85">{person.fatherKm}</p>}
-      <p className="mt-1 font-display text-xl text-gold-light">{person.mother}</p>
+      <p className="mt-1 font-display text-0.5xl text-gold-light">{person.mother}</p>
       {person.motherKm && <p lang="km" className="font-khmer-desc text-ink/85">{person.motherKm}</p>}
     </div>
   );
@@ -66,8 +66,8 @@ export default function InfoSection() {
         </p>
 
         <div className="mt-11 grid grid-cols-2 gap-6">
-          <Parents title="Parents of the groom" person={couple.groom} align="left" />
-          <Parents title="Parents of the bride" person={couple.bride} align="right" />
+          <Parents title="មាតិបិតាកូនកំលោះ" person={couple.groom} align="left" />
+          <Parents title="មាតាបិតាកូនក្រមុំ" person={couple.bride} align="right" />
         </div>
 
         <p lang="km" className="mt-12 font-khmer-display text-xl leading-relaxed sm:text-2xl">
