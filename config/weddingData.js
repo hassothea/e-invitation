@@ -167,7 +167,7 @@ export const weddingData = {
     invitationTextKm:
       "ឯកឧត្តម លោកជំទាវ លោកអ្នកឧកញ៉ា អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀ វកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីសិរីមង្គលអាពាហ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំ។",
     invitationText:
-      "Together with our families, invite you to celebrate our son and daughter's wedding...",
+      "Together with our families, we invite you to celebrate the wedding of our son and daughter...",
     heldAtKm: "ដែលនឹងប្រព្រឹត្តទៅនៅ",
     heldAt: "to be held at",
   },
