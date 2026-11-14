@@ -68,7 +68,7 @@ export const weddingData = {
       nameKm: "ផៃ ផានិច", // the name in Khmer script (optional)
       fullName: "PHAI Phanich",
       parents: "Daughter of Mr. MAO Phai and Mrs. PHORN Sophea",
-      father: "លោក ម៉ៅ ផៃ",
+      father: "លោក ម៉ៅ ផៃ      ",
       fatherKm: "",
       mother: "លោកស្រី ភ័ណ សុភា",
       motherKm: "",

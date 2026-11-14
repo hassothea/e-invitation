@@ -6,9 +6,22 @@ import { CornerOrnaments, Crest } from "./Ornaments";
 import { weddingData } from "@/config/weddingData";
 import { formatLongDate } from "@/lib/format";
 
+// function Parents({ title, person, align }) {
+//   return (
+//     <div className={align === "right" ? "text-right" : "text-left"}>
+//       <p className="text-2xs text-ink/75">{title}</p>
+//       <p className="mt-3 font-display text-0.5xl text-gold-light">{person.father}</p>
+//       {person.fatherKm && <p lang="km" className="font-khmer-desc text-ink/85">{person.fatherKm}</p>}
+//       <p className="mt-1 font-display text-0.5xl text-gold-light">{person.mother}</p>
+//       {person.motherKm && <p lang="km" className="font-khmer-desc text-ink/85">{person.motherKm}</p>}
+//     </div>
+//   );
+// }
+
 function Parents({ title, person, align }) {
+  const right = align === "right";
   return (
-    <div className={align === "right" ? "text-right" : "text-left"}>
+    <div className={`w-fit max-w-full text-left ${right ? "justify-self-end" : "justify-self-start"}`}>
       <p className="text-2xs text-ink/75">{title}</p>
       <p className="mt-3 font-display text-0.5xl text-gold-light">{person.father}</p>
       {person.fatherKm && <p lang="km" className="font-khmer-desc text-ink/85">{person.fatherKm}</p>}
