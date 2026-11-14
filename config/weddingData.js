@@ -138,7 +138,7 @@ export const weddingData = {
      music starts when the guest presses "Open invitation"; the round sound
      button (bottom right) lets them pause or play at any time.            */
   music: {
-    src: "https://www.youtube.com/watch?v=Mn_qLC7_ueA",
+    src: "/audio/music.mp3",
     startOn: "open", // "open" = starts at "Open invitation"; "button" = only from the sound button
     volume: 0.6, // 0 (silent) to 1 (full)
     loop: true,
@@ -167,7 +167,7 @@ export const weddingData = {
     invitationTextKm:
       "ឯកឧត្តម លោកជំទាវ លោកអ្នកឧកញ៉ា អ្នកឧកញ៉ា ឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀ វកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តី ជ័យមង្គល ក្នុងពិធីសិរីមង្គលអាពាហ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំ។",
     invitationText:
-      "Together with our families, invite you to celebrate our wedding...",
+      "Together with our families, invite you to celebrate our son and daughter's wedding...",
     heldAtKm: "ដែលនឹងប្រព្រឹត្តទៅនៅ",
     heldAt: "to be held at",
   },
@@ -274,7 +274,7 @@ export const weddingData = {
     name: "Sereimongkol Restaurant",
     nameKm: "ភោជនីយដ្ឋាន សិរីមង្គល",
     short: "Bavel, Battambang", // shown under the date on the cover
-    addressLines: ["Bavel Village 1, Bavel Commune", "Bavel District, Battambang Province"],
+    addressLines: ["Bavel 1 Village, Bavel Commune", "Bavel District, Battambang Province"],
     addressKm: "ភូមិបវេល១ ឃុំបវេល ស្រុកបវេល ខេត្តបាត់ដំបង",
     coverKm:
       "ស្ថិតនៅ ភោជនីយដ្ឋាន សិរីមង្គល ភូមិបវេល១ ឃុំបវេល ស្រុកបវេល ខេត្តបាត់ដំបង (ខាងកើតធនាគារABA ចម្ងាយ50m)",
