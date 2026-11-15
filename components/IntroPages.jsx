@@ -55,7 +55,7 @@ export function CoverPage({ guestName, onOpen }) {
         <p className="font-display italic text-ink/80" style={{ fontSize: "clamp(.9rem, 2.2svh, 2.1rem)", lineHeight: 2 }}>
           {hero.invite}
         </p>
-        <p className="font-display" style={{ fontSize: "clamp(1rem, min(4vw, 2.5svh), 2.1rem)", lineHeight: 1.8, marginTop: "2svh" }}>
+        <p className="font-display" style={{ fontSize: "clamp(1rem, min(4vw, 3svh), 2.1rem)", lineHeight: 1.8, marginTop: "2svh" }}>
           <span className="gold-text">{guestName || guest.fallback}</span>
         </p>
         <button
