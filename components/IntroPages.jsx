@@ -49,7 +49,7 @@ export function CoverPage({ guestName, onOpen }) {
       </div>
 
       <div className="rise flex flex-col items-center" style={rise(0.8)}>
-        <p lang="km" className="font-khmer-display" style={{ fontSize: "clamp(1rem, 3svh, 1.5rem)", lineHeight: 4 }}>
+        <p lang="km" className="font-khmer-display" style={{ fontSize: "clamp(1rem, 3svh, 1.25rem)", lineHeight: 4 }}>
           <span className="gold-text">{hero.inviteKm}</span>
         </p>
         <p className="font-display italic text-ink/80" style={{ fontSize: "clamp(.9rem, 2.2svh, 2.1rem)", lineHeight: 2 }}>
