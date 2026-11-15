@@ -15,7 +15,7 @@ export function CoverPage({ guestName, onOpen }) {
 
   return (
     <section id="welcome" className="relative flex min-h-full flex-col items-center justify-between px-6 py-[6svh] text-center">
-      <p lang="km" className="rise font-khmer-display" style={{ ...rise(0.2), fontSize: "clamp(1.5rem, min(6.6vw, 6svh), 3.4rem)", lineHeight: 1.6 }}>
+      <p lang="km" className="rise font-khmer-display" style={{ ...rise(0.2), fontSize: "clamp(1.5rem, min(6.6vw, 6svh), 3.25rem)", lineHeight: 1.6 }}>
         <span className="gold-text">{hero.titleKm}</span>
       </p>
 
@@ -52,10 +52,10 @@ export function CoverPage({ guestName, onOpen }) {
         <p lang="km" className="font-khmer-display" style={{ fontSize: "clamp(1rem, 3svh, 1.25rem)", lineHeight: 4 }}>
           <span className="gold-text">{hero.inviteKm}</span>
         </p>
-        <p className="font-display italic text-ink/80" style={{ fontSize: "clamp(.9rem, 2.2svh, 2.1rem)", lineHeight: 2 }}>
+        <p className="font-display italic text-ink/80" style={{ fontSize: "clamp(.9rem, 2.2svh, 2.5rem)", lineHeight: 3 }}>
           {hero.invite}
         </p>
-        <p className="font-display" style={{ fontSize: "clamp(1rem, min(4vw, 3svh), 2.1rem)", lineHeight: 1.8, marginTop: "2svh" }}>
+        <p className="font-display" style={{ fontSize: "clamp(1rem, min(4vw, 3.5svh), 2.5rem)", lineHeight: 3, marginTop: "2svh" }}>
           <span className="gold-text">{guestName || guest.fallback}</span>
         </p>
         <button
