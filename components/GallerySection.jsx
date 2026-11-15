@@ -49,7 +49,39 @@ export default function GallerySection() {
                   <iframe title={`Map showing ${abaqr.name}`} src={mapSrc} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen className="h-full w-full border-0" />
                 </div>
               )}
-
+          {/* <div className="mt-5 flex justify-center">
+            <a
+              href={abaqr.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center justify-center gap-2 rounded-full bg-green-900 px-6 py-3 font-medium  shadow-lg transition-colors hover:bg-green-800">
+              <div className="text-center">
+                <p lang="km" className="font-khmer-display text-lg leading-relaxed">
+                  <span className="gold-text">{abaqr.linkKm}</span>
+                </p>
+                <p className="mt-0.5">
+                  <span className="gold-text">Click here to go to ABA</span>
+                </p>
+              </div>
+            </a>
+        </div> */}
+        <div className="mt-5 flex justify-center">
+          <a
+            href={abaqr.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full border border-gold bg-green-900 px-6 py-3 shadow-[0_0_12px_rgba(212,175,55,0.45)] transition hover:bg-green-800 hover:shadow-[0_0_18px_rgba(212,175,55,0.65)]"
+          >
+            <div className="text-center">
+              <p lang="km" className="font-khmer-display text-base leading-relaxed">
+                <span className="gold-text">{abaqr.linkKm}</span>
+              </p>
+              <p className="mt-0.5 text-xs">
+                <span className="gold-text">Click here to go to ABA</span>
+              </p>
+            </div>
+          </a>
+        </div>
         {show.closing && (
         <div className="relative mt-6 pb-44 text-center sm:pb-52">
           <h2 className="mx-auto max-w-xl text-balance font-display text-4xl font-light sm:text-5xl"><span className="gold-text">

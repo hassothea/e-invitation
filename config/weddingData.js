@@ -298,6 +298,8 @@ export const weddingData = {
 
   abaqr : {
     display : 'qr',
+    link : "https://pay.ababank.com/oRF8/o1junocd",
+    linkKm : "ចងដៃតាមរយៈ ABA",
     headerKh : "ចំណងដៃអាពាហ៍ពិពាហ៍",
     header : "Wedding Gift",
     qrImage : "/images/ABA.jpg",
