@@ -49,13 +49,13 @@ export function CoverPage({ guestName, onOpen }) {
       </div>
 
       <div className="rise flex flex-col items-center" style={rise(0.8)}>
-        <p lang="km" className="font-khmer-display" style={{ fontSize: "clamp(1rem, 3svh, 1.25rem)", lineHeight: 4 }}>
+        <p lang="km" className="font-khmer-display" style={{ fontSize: "clamp(1rem, 2svh, 1rem)", lineHeight: 4 }}>
           <span className="gold-text">{hero.inviteKm}</span>
         </p>
         <p className="font-display italic text-ink/80" style={{ fontSize: "clamp(.9rem, 2.2svh, 2.5rem)", lineHeight: 3 }}>
           {hero.invite}
         </p>
-        <p className="font-display" style={{ fontSize: "clamp(1rem, min(4vw, 3.5svh), 2.5rem)", lineHeight: 3, marginTop: "2svh" }}>
+        <p className="font-display" style={{ fontSize: "clamp(1rem, min(4vw, 4svh), 3rem)", lineHeight: 3, marginTop: "2svh" }}>
           <span className="gold-text">{guestName || guest.fallback}</span>
         </p>
         <button
